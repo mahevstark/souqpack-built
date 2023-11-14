@@ -41,6 +41,7 @@
 		"/cart",
 		"/cart/__data.json",
 		"/",
+		"/en/*",
 		"/__data.json",
 		"/checkout",
 		"/checkout/__data.json",
