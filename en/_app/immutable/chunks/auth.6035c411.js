@@ -1,0 +1,1 @@
+async function c(){var o;const a=localStorage.getItem("login_data");try{if(a){const t=(o=JSON.parse(a))==null?void 0:o.token;if((await(await fetch("https://admin.souqpack.com/api/check_login",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({token:t})})).json()).action=="success")return!0}}catch(t){console.log(t)}return!1}export{c};
