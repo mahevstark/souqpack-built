@@ -598,9 +598,6 @@ var init_layout_svelte = __esm({
     Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let $navigating, $$unsubscribe_navigating;
       $$unsubscribe_navigating = subscribe(navigating, (value) => $navigating = value);
-      const prerender4 = true;
-      if ($$props.prerender === void 0 && $$bindings.prerender && prerender4 !== void 0)
-        $$bindings.prerender(prerender4);
       $$unsubscribe_navigating();
       return `${$navigating ? `${validate_component(Page, "Loading").$$render($$result, {}, {}, {})}` : `<div class="w-full relative ">${slots.default ? slots.default({}) : ``} ${``}</div>`}`;
     });
@@ -621,8 +618,8 @@ var init__ = __esm({
   ".svelte-kit/output/server/nodes/0.js"() {
     index = 0;
     component = async () => component_cache ??= (await Promise.resolve().then(() => (init_layout_svelte(), layout_svelte_exports))).default;
-    imports = ["_app/immutable/nodes/0.97fb0475.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/stores.f331f4f0.js", "_app/immutable/chunks/singletons.4b2d37d2.js", "_app/immutable/chunks/stores.c48fab05.js", "_app/immutable/chunks/page.8d9c1114.js"];
-    stylesheets = ["_app/immutable/assets/0.2d2a7d11.css"];
+    imports = ["_app/immutable/nodes/0.2e268055.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/stores.0b5af109.js", "_app/immutable/chunks/singletons.980f5eb1.js", "_app/immutable/chunks/stores.df9b739c.js", "_app/immutable/chunks/page.123f46c5.js"];
+    stylesheets = ["_app/immutable/assets/0.4af3cc3c.css"];
     fonts = ["_app/immutable/assets/Roboto-Regular.4e147ab6.ttf", "_app/immutable/assets/Roboto-Bold.ec685a46.ttf", "_app/immutable/assets/Roboto-Medium.9d0d55a3.ttf"];
   }
 });
@@ -660,7 +657,7 @@ var init__2 = __esm({
   ".svelte-kit/output/server/nodes/1.js"() {
     index2 = 1;
     component2 = async () => component_cache2 ??= (await Promise.resolve().then(() => (init_error_svelte(), error_svelte_exports))).default;
-    imports2 = ["_app/immutable/nodes/1.7d7576eb.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/stores.f331f4f0.js", "_app/immutable/chunks/singletons.4b2d37d2.js"];
+    imports2 = ["_app/immutable/nodes/1.415372ed.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/stores.0b5af109.js", "_app/immutable/chunks/singletons.980f5eb1.js"];
     stylesheets2 = [];
     fonts2 = [];
   }
@@ -768,7 +765,7 @@ var init_page2 = __esm({
     sudiaflag = "data:image/webp;base64,UklGRn4BAABXRUJQVlA4WAoAAAAgAAAAFwAADwAAVlA4TF8BAAAvF8ADAAfjIJIkRapafDb3/pUstA3HbRtJcpTyzOy9+1yHbdtIkpRkdu+/K+X6723H8x9//5JwgwAJKSChwAmQAhKgFIKUpEgoSgpJSJCSFCRBkm4bJEBOFEUhZVFr7Ry//4+3MY4B9Y0b6tFuoUAraXcZLUlpays3FUFDl1U0gghNO4WgyEpdKdMO8xjUtJXKCZXuUIjCLS4ydENwms87r+L0/D0BYiTbpq3Xz9a3bd5v27aVfxZmAhH9V+C2jdIxHf4CAAAAAAAAAAAAqK1prGlt6ezp665v/1Kiw1P74zNrl+uLqxtjdV8htXzydH12ef+wO3G80P8VkgdHz7eHdy+PO9Pze4NfBqcPc+c32xezW0srkxVfFiqqG6rbSh3lrqbK2OvYl4VUKpV636CYDn+HXCaRSCTKVYX414gPBcFoEASbVyPRbx40Vixks/l880Bv5CevHQq9v8k//RQA";
     uaeflag = "data:image/webp;base64,UklGRowAAABXRUJQVlA4WAoAAAAgAAAAFwAACwAAVlA4TG4AAAAvF8ACAD+gIJIN6nX4IJMUOiinnRoE2Tbl2c1PqaZtJObG43Ffxgf5tNv8B+AqtzFSvxFV8h4YA2AbKApRiEIUohCFKNT/tTuDiP7HNpIkSf6ybdv2trZt2267u7u7u2eSJEm2SZIkaRsAAAA+Aw==";
     Page$6 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<main data-svelte-h="svelte-19xvq8q"><div class="flex flex-row justify-center items-center bg-black w-full"><div class="flex flex-row justify-between items-center max-w-[1440px] w-full px-3 py-2"><div class="flex flex-row items-center"><a href="https://souqpack.com/" class="flex flex-row items-center cursor-pointer"><img class="w-6 h-4 mx-2"${add_attribute("src", sudiaflag, 0)} alt="arrow-down"> <span class="text-white ">\u0639\u0631\u0628\u064A</span></a> <div class="w-4"></div> <div class="text-white">/</div> <div class="w-4"></div> <div class="flex flex-row items-center cursor-pointer"><img class="w-6 h-3 mx-2"${add_attribute("src", uaeflag, 0)} alt="arrow-down"> <span class="text-white ">UAE</span></div></div></div></div> </main>`;
+      return `<main data-svelte-h="svelte-1a4vyrw"><div class="flex flex-row justify-center items-center bg-black w-full"><div class="flex flex-row justify-between items-center max-w-[1440px] w-full px-3 py-2"><div class="flex flex-row items-center"><a href="https://souqpack.com/" class="flex flex-row items-center cursor-pointer"><img class="w-6 h-4 mx-2"${add_attribute("src", sudiaflag, 0)} alt="arrow-down" title="drop down"> <span class="text-white ">\u0639\u0631\u0628\u064A</span></a> <div class="w-4"></div> <div class="text-white">/</div> <div class="w-4"></div> <div class="flex flex-row items-center cursor-pointer"><img class="w-6 h-3 mx-2"${add_attribute("src", uaeflag, 0)} alt="arrow-down" title="uae"> <span class="text-white ">UAE</span></div></div></div></div> </main>`;
     });
     logo = "/_app/immutable/assets/logo.edf978e6.webp";
     search = "data:image/webp;base64,UklGRqgFAABXRUJQVlA4WAoAAAAwAAAAYwAAYwAAQUxQSD8FAAABoAVJtmnbWhvXtm3btm3btn3vsa9t27Zt277H2PtgxcHuOeaY673viIDgSHLcppdG1gfJyYo7/IMmGebMFYavPffse7A9KvzfuzsHnNvmS6YZKyx1/G7/jtZFEfZ2/8gMxvmkyfKvumOIvzozJqsRyND/fJguFTFvvMpbFJOs922dIYJWFFRJ4nqPdaawLcyobtZuu84Xr5uqwdTwk54g2D70SKkA62Sbzh1XsrOTaj/1H4gKDQwIJv/X/6oyk+Ms6bd3nfrULp4vZ47chSq2GLPtJ0WZfxtWCt0Uy/68uE0moSWUG3tGXMjIPmY+st+MEWA/PyiPiaQvec1VQucJGGpim3FGJPher6QSGksujRDt2Iproz0CtT+nyJak2NlowYS6PEwQvK7lZajF4FAs9GkuDurbcMkXJGapRv6XeJxgWCD9RygzupuV6bFmOYtvgAny9rsTqvzSnPFe2A074G9xWeraYd7MxNjJGY/BmhyWrcMjOKNLvCMx9vIlOBrI0RsKnG1ltr3i3xA3UkjdVHcQlxKx23d7O3q6LWQYgF7fc/HfQuYVSPVNi0QXX0CM1RRE6j9Idi06zcLQk9TIIXmKkJutohvAKiAtorMakj4A/MhHfv8dcDJ2jproid4OotIQ2VAfjYq8O70BbKeyFPAmu6YqPJD0jDQs9wDumjKqB4KT1JJGVnTkm3BAPko3gPY5NCoDy7an0dSFF2AXjTFA1gVNIU0Bj2hsBMxUSRJgliG0CwldCrGNrzJeAfU5SLwAVFbKKUAdEr8csRVSymZAVxKhjgTmUspiwHASwKz/ZlWKG2CSHH+yKMUFMIWEzRH/OJc0RPOPJeHvSGg+pawGDCDx3pHoUko5AGhB4g5Q1VApyIzLkjgIGKaUv+AppCDhBFijkgLg0vhKk9UO8NGkkGFA/EUa+UKBruIK2QtYSiP5O2Q/6sjxATCIKGw/4HgyZQwGJvW7NJERgIiqyjgGpF+xEEkfjh6iKkrYAfPJ0s4APhdTg2kTEG6rSWZMDNDmq4Yi/mjV1GSyvQWEF1by94QOGCKhzgeJO21VQKPY8oMrI4MEFYN1YHMD+cnyAVXGSUaedRWSF5Kffw7SHFRASmBhOxL4Kisv5gk6YpGkRBeo8FxyVnrGuSzwljSSZHoLx/5MjPTwR3Ije0mLbAU/ijmVkwtLT39YksOJ5XX66TCulmRabUIo1PqD45CmvqFjoZ3NHLvGb4Tcqx9LNXLF1Rs+1DVppT9tlKAfUUOv5Cl5zUCB2H8Dk0llRU7Euoow1iZiGR2jRBV53DcJmZKbA3RCRK3lSfuJFb/zrkUpSo7Bx2MPPzFWJGPpgeEOoqEt3fZtgRUXGrHvo8M6pNSDpwta/6NJfntm61IPN5+1B2/9if1OMtySsSR1n+osIdgVnx67K8/IfTKGmZ/9l+p4uDE5+Ph/sgja90h+TVsh6AOPRDxJscN8/OkV31XWlaLFuEy23s1oEoSz7uR4iSyNEpkA00jR4qY8Yc4FgcykziQTYOnRWqt/SB3iS0MzCGQ62QgmwHTo8g3a+YbmJL+vzq+VOqFIlC6y4XRJ7GCMjK3n7nkSBr3z2+VlQ0pbkUL4JdUE+AqZu36P0VOmTxjUulxKKXkugsXiUuNF/KaixVYaE4oJGDRdITIBo6ZLjJfS9vERpgYdTsJNjZpG4StmiVHHEmFq0F85/9+aAKOdrbIYNHXBRHbWjDoBXzF3Y/kPmECYZtgBFwvVjDt8wWLXNQOPpY4mE/sTI8cye4KXp8nQWDrcDgm51smkAQBWUDggQgAAANAFAJ0BKmQAZAA+nU6kTiWkI6IgqACwE4lpCh5wALdrLuSLxF/8sbEXlgGupvcReWAa6m9xFtAA/vtlAAAAAAAAAA==";
@@ -780,7 +777,7 @@ var init_page2 = __esm({
       let total = 0;
       return `<div${add_attribute("class", "cursor-default z-20 absolute top-5 right-0 lg:w-[30vw] w-[100vw] bg-white border border-gray-300 px-4 py-4  hidden group-hover:flex", 0)}><div class="flex flex-col w-full justify-start items-start">${each(cartItems, (cartItem, index8) => {
         return `<div class="flex flex-col w-full border-b border-b-gray-300 py-4"><div class="flex flex-row relative pr-5"><div class=""><img${add_attribute("src", `https://admin.souqpack.com/resources/uploads/products/webp/w245/${cartItem.img.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="cart item" class="w-20 h-20"></div> <div class="flex flex-col justify-start items-start"><span style="font-family: RobotoMedium;"><span style="font-family:RobotoBold;">${escape(cartItem.qty)}</span> X ${escape(cartItem.title)}</span> <span>Total: ${escape(cartItem.price * cartItem.qty)} SAR</span></div> <button name="Remove Item" title="Remove Item" class="absolute top-2 right-2" data-svelte-h="svelte-1qrf00k">X</button></div> </div>`;
-      })} <hr class="w-full"> <div class="flex flex-row justify-between items-center py-4 w-full"><span class="text-xl" style="font-family:RobotoBold;" data-svelte-h="svelte-otc1e4">Total</span> <span class="text-xl" style="font-family:RobotoBold;">${escape(total)} SAR</span></div> <hr class="w-full"> <div class="flex flex-row justify-between items-center py-4 w-full" data-svelte-h="svelte-19y0sdc"><div class="w-1/2 flex flex-row items-center justify-center"><a title="Cart" aria-label="Cart"${add_attribute("href", `${base}/cart`, 0)} class="rounded-md border-2 border-black text-black px-4 py-1" style="font-family: RobotoMedium;">View Cart</a></div> <div class="w-1/2 flex flex-row items-center justify-center"><a title="Checkout" aria-label="Checkout"${add_attribute("href", `${base}/checkout`, 0)} class="rounded-md border-2 border-[#f9ca03] bg-[#f9ca03] px-4 py-1 text-white" style="font-family: RobotoMedium;">Checkout</a></div></div></div></div>`;
+      })} <hr class="w-full"> <div class="flex flex-row justify-between items-center py-4 w-full"><span class="text-xl" style="font-family:RobotoBold;" data-svelte-h="svelte-otc1e4">Total</span> <span class="text-xl" style="font-family:RobotoBold;">${escape(total)} SAR</span></div> <hr class="w-full"> <div class="flex flex-row justify-between items-center py-4 w-full"><div class="w-1/2 flex flex-row items-center justify-center" data-svelte-h="svelte-l56k8n"><a title="Cart" aria-label="Cart"${add_attribute("href", `${base}/cart`, 0)} class="rounded-md border-2 border-black text-black px-4 py-1" style="font-family: RobotoMedium;">View Cart</a></div> <div class="w-1/2 flex flex-row items-center justify-center"><button class="rounded-md border-2 border-[#f9ca03] bg-[#f9ca03] px-4 py-1 text-white" style="font-family: RobotoMedium;" data-svelte-h="svelte-1ouxot3">Checkout</button></div></div></div></div>`;
     });
     Page$4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let searchText = "";
@@ -788,13 +785,14 @@ var init_page2 = __esm({
       cart.subscribe((val) => {
         totalCart = val.total;
       });
-      return `<div class="flex flex-row w-full justify-center border-b border-b-grey-400"><div class="flex cursor-default flex-row items-center justify-between max-w-[1440px] w-full px-5 py-7"><div class="flex flex-row items-center lg:w-1/4 w-1/2" data-svelte-h="svelte-78rono"><a${add_attribute("href", `${base}/`, 0)}><img${add_attribute("src", logo, 0)} alt="Souqpack" class="w-[164px] h-11 "></a></div> <div class="hidden lg:flex flex-row items-center lg:w-2/4 w-1/2"><div class="border border-gray-400 rounded-full bg-[#f5f5f5] flex flex-row justify-between items-center w-full relative overflow-hidden"><form class="w-full"><input class="text-xl px-4 ml-2 py-3 bg-[#f5f5f5] rounded-full w-full" placeholder="Coffee bags"${add_attribute("value", searchText, 0)}></form> <button class="bg-[#f9ca03] px-6 flex flex-row justify-center items-center absolute right-0 top-0 bottom-0" data-svelte-h="svelte-1dbby3j"><img${add_attribute("src", search, 0)} class="w-4 h-4" alt="Search"></button></div></div> <div class="flex flex-row items-center justify-end lg:w-1/4 w-1/2"><div class="flex flex-row items-center"><a${add_attribute("href", `${base}/login`, 0)} data-svelte-h="svelte-19bnhrg"><img${add_attribute("src", user, 0)} alt="user" class="w-5 h-5"></a> <a${add_attribute("href", `${base}/`, 0)} class="ml-2" data-svelte-h="svelte-1gne7gx"><img${add_attribute("src", heart, 0)} alt="Wishlist" class="w-5 h-5"></a> <button class="ml-2 flex flex-row items-center relative group"><img${add_attribute("src", cartImage, 0)} alt="Cart" class="w-5 h-5"> <span class="italic">${escape(totalCart)} SAR</span> ${validate_component(Page$5, "CartComponent").$$render($$result, {}, {}, {})}</button></div></div></div></div>`;
+      return `<div class="flex flex-row w-full justify-center border-b border-b-grey-400"><div class="flex cursor-default flex-row items-center justify-between max-w-[1440px] w-full px-5 py-7"><div class="flex flex-row items-center lg:w-1/4 w-1/2" data-svelte-h="svelte-78rono"><a${add_attribute("href", `${base}/`, 0)}><img${add_attribute("src", logo, 0)} alt="Souqpack" class="w-[164px] h-11 "></a></div> <div class="hidden lg:flex flex-row items-center lg:w-2/4 w-1/2"><div class="border border-gray-400 rounded-full bg-[#f5f5f5] flex flex-row justify-between items-center w-full relative overflow-hidden"><form class="w-full"><input class="text-xl px-4 ml-2 py-3 bg-[#f5f5f5] rounded-full w-full" placeholder="Coffee bags"${add_attribute("value", searchText, 0)}></form> <button class="bg-[#f9ca03] px-6 flex flex-row justify-center items-center absolute right-0 top-0 bottom-0" data-svelte-h="svelte-1dbby3j"><img${add_attribute("src", search, 0)} class="w-4 h-4" alt="Search"></button></div></div> <div class="flex flex-row items-center justify-end lg:w-1/4 w-1/2"><div class="flex flex-row items-center"><a${add_attribute("href", `${base}/login`, 0)} data-svelte-h="svelte-oarpnk"><img${add_attribute("src", user, 0)} alt="user" class="w-5 h-5" title="user"></a> <a${add_attribute("href", `${base}/wishlist`, 0)} class="ml-2" data-svelte-h="svelte-vlzrm4"><img${add_attribute("src", heart, 0)} alt="Wishlist" class="w-5 h-5" title="Add to Fav"></a> <button class="ml-2 flex flex-row items-center relative group"><img${add_attribute("src", cartImage, 0)} alt="Cart" class="w-5 h-5" title="SAR"> <span class="italic">${escape(totalCart)} SAR</span> ${validate_component(Page$5, "CartComponent").$$render($$result, {}, {}, {})}</button></div></div></div></div>`;
     });
     Page$3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { data } = $$props;
+      let searchText = "";
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
-      return `<button id="mobile-menu-btn" data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" type="button" class="inline-flex items-center p-4 pl-0 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" data-svelte-h="svelte-11cpald"><span class="sr-only">Open sidebar</span> <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path></svg></button> <div class="lg:hidden flex flex-row items-center w-full" data-svelte-h="svelte-whzdas"><div class="border border-gray-400 rounded-full bg-[#f5f5f5] flex flex-row justify-between items-center w-full relative overflow-hidden"><input class="text-base px-2 ml-1 py-1 bg-[#f5f5f5] rounded-full" placeholder="Coffee bags"> <div class="bg-[#f9ca03] px-6 flex flex-row justify-center items-center absolute right-0 top-0 bottom-0"><img loading="lazy"${add_attribute("src", search, 0)} class="w-4 h-4" alt="Search"></div></div></div> <aside id="mobile-menu" class="fixed top-0 left-0 right-0 z-40 w-full h-screen transition-transform -translate-x-full flex flex-row" aria-label="Sidebar"><div class="h-full lg:w-[30%] w-[70%] px-3 py-4 overflow-y-auto bg-gray-50"><div class="flex flex-col w-full h-full">${data && data.props && data.props.cats ? `${each(data.props?.cats, (cat) => {
+      return `<button id="mobile-menu-btn" data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" type="button" class="inline-flex items-center p-4 pl-0 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" data-svelte-h="svelte-11cpald"><span class="sr-only">Open sidebar</span> <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path></svg></button> <div class="lg:hidden flex flex-row items-center w-full"><div class="border border-gray-400 rounded-full bg-[#f5f5f5] flex flex-row justify-between items-center w-full relative overflow-hidden"><form class="w-full"><input class="text-xl px-4 ml-2 py-3 bg-[#f5f5f5] rounded-full w-full" placeholder="Coffee bags"${add_attribute("value", searchText, 0)}></form> <button class="bg-[#f9ca03] px-6 flex flex-row justify-center items-center absolute right-0 top-0 bottom-0" data-svelte-h="svelte-w4h9d6"><img${add_attribute("src", search, 0)} class="w-4 h-4" alt="Search"></button></div></div> <aside id="mobile-menu" class="fixed top-0 left-0 right-0 z-40 w-full h-screen transition-transform -translate-x-full flex flex-row" aria-label="Sidebar"><div class="h-full lg:w-[30%] w-[70%] px-3 py-4 overflow-y-auto bg-gray-50"><div class="flex flex-col w-full h-full">${data && data.props && data.props.cats ? `${each(data.props?.cats, (cat) => {
         return `<div class="group relative cursor-pointer "><a${add_attribute("href", `${base}/category/${cat.slug}`, 0)} class="flex flex-row items-center bg-white menu-opener"><img loading="lazy"${add_attribute("src", `https://admin.souqpack.com/resources/uploads/categories/webp/output20/${cat.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="icon" class="w-5 h-5 mr-1"> <span class="menu-hover ml-2 my-2 py-2 font-medium text-black text-sm">${escape(cat.title)} </span></a> <div class="hidden menu-to-be-opened ml-2 w-full h-auto flex-col bg-white py-1 text-gray-800 shadow transition-all duration-300 ease-in-out">${each(cat.subs, (sub) => {
           return `<a${add_attribute("href", `${base}/category/${sub.slug}`, 0)} class="flex flex-row items-center border-b border-b-[#ccc] ml-1 mr-1 hover:text-[#f9ca03] hover:border-b-[#f9ca03] text-black px-5 min-w-[140px]"><span><img loading="lazy"${add_attribute("src", `https://admin.souqpack.com/resources/uploads/categories/webp/output64/${sub.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="icon" class="w-16 h-16 mr-1"></span> <span class="menu-hover my-1 py-2 text-sm">${escape(sub.title)}</span> </a>`;
         })}</div> </div>`;
@@ -805,8 +803,8 @@ var init_page2 = __esm({
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
       return `<div class="flex flex-row w-full justify-center"><div class="flex flex-row items-center max-w-[1440px] w-full px-5">${validate_component(Page$3, "Mobilemenu").$$render($$result, { data }, {}, {})} <div class="hidden lg:flex flex-row items-center">${data && data.props && data.props.cats ? `${each(data.props?.cats, (cat) => {
-        return `<div class="group relative cursor-pointer py-2 pill"><a${add_attribute("href", `${base}/category/${cat.slug}`, 0)} class="flex items-center justify-between bg-white mr-4"><img loading="lazy"${add_attribute("src", `https://admin.souqpack.com/resources/uploads/categories/webp/output20/${cat.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="icon" class="w-5 h-5 mr-1"> <span class="menu-hover my-2 py-2 font-medium text-black text-sm">${escape(cat.title)} </span></a> <div class="invisible absolute z-50 flex popup group-hover:w-[35vw] group-hover:h-auto w-0 h-0 flex-row flex-wrap bg-white py-1 text-gray-800 shadow group-hover:visible transition-all duration-300 ease-in-out">${each(cat.subs, (sub) => {
-          return `<a${add_attribute("href", `${base}/category/${sub.slug}`, 0)} class="flex flex-col justify-center items-center border-b border-b-[#ccc] ml-1 mr-1 hover:text-[#f9ca03] hover:border-b-[#f9ca03] text-black px-5 min-w-[140px]"><span><img loading="lazy"${add_attribute("src", `https://admin.souqpack.com/resources/uploads/categories/webp/output64/${sub.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="icon" class="w-16 h-16 mr-1"></span> <span class="menu-hover my-2 py-2 text-sm">${escape(sub.title)}</span> </a>`;
+        return `<div class="group relative cursor-pointer py-2 pill"><a${add_attribute("href", `${base}/category/${cat.slug}`, 0)} class="flex items-center justify-between bg-white mr-4"><img loading="lazy"${add_attribute("src", `https://admin.souqpack.com/resources/uploads/categories/webp/output20/${cat.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="icon"${add_attribute("title", cat.title, 0)} class="w-5 h-5 mr-1"> <span class="menu-hover my-2 py-2 font-medium text-black text-sm">${escape(cat.title)} </span></a> <div class="invisible absolute z-50 flex popup group-hover:w-[35vw] group-hover:h-auto w-0 h-0 flex-row flex-wrap bg-white py-1 text-gray-800 shadow group-hover:visible transition-all duration-300 ease-in-out">${each(cat.subs, (sub) => {
+          return `<a${add_attribute("href", `${base}/category/${sub.slug}`, 0)} class="flex flex-col justify-center items-center border-b border-b-[#ccc] ml-1 mr-1 hover:text-[#f9ca03] hover:border-b-[#f9ca03] text-black px-5 min-w-[140px]"><span><img loading="lazy"${add_attribute("src", `https://admin.souqpack.com/resources/uploads/categories/webp/output64/${sub.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} alt="icon"${add_attribute("title", sub.title, 0)} class="w-16 h-16 mr-1"></span> <span class="menu-hover my-2 py-2 text-sm">${escape(sub.title)}</span> </a>`;
         })}</div> </div>`;
       })}` : `<h1 data-svelte-h="svelte-x2w0ft">Categories not found</h1>`}</div></div></div>`;
     });
@@ -880,22 +878,22 @@ var init_page2 = __esm({
       ];
       const paymenticons = [
         {
-          name: "Facebook",
+          name: "amarican_express",
           icon: amarican_express,
           link: "https://www.facebook.com"
         },
         {
-          name: "Twitter",
+          name: "mada",
           icon: mada,
           link: "https://www.twitter.com"
         },
         {
-          name: "Instagram",
+          name: "master_card",
           icon: master_card,
           link: "https://www.instagram.com"
         },
         {
-          name: "YouTube",
+          name: "visa",
           icon: visa,
           link: "https://www.insyoutubeagram.com"
         }
@@ -945,18 +943,18 @@ var init_page2 = __esm({
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
       $$result.css.add(css);
-      return `<div style="background-color: #f7f8fb; font-family:Roboto;" class="w-full flex flex-row items-center justify-center pt-10"><div class="max-w-[1440px] w-full flex flex-row justify-center self-center px-4"><div class="flex flex-col items-center w-full divide-y "><div class="flex lg:flex-row flex-col lg:gap-0 gap-4 lg:items-start items-center w-full pb-10" data-svelte-h="svelte-sgdft3"><div class="lg:w-1/3 sm:w-1/2 w-full flex flex-col"><div class="flex flex-row items-center"><div class="gol-wala p-4 flex items-center justify-center"><img alt="Shipped" class="h-[40px] w-[40px] flex items-center justify-between"${add_attribute("src", shiped, 0)}></div> <div class="flex flex-col pl-0"><div class="flex flex-row"><h4 class="text-lg pb-2" style="font-family: Roboto;">Shipping Service</h4></div> <div class="w-full flex flex-col common-css svelte-l4nkvq"><span class="text-sm " style="font-family: Roboto;">Best Shipping Service</span></div></div></div></div> <div class="lg:w-1/3 sm:w-1/2 w-full flex flex-col"><div class="flex flex-row items-center"><div class="gol-wala p-4 flex items-center justify-center"><img alt="quality" class="h-[40px] w-[40px] flex items-center justify-between"${add_attribute("src", quality, 0)}></div> <div class="flex flex-col pl-0"><div class="flex flex-row"><h4 class="text-lg pb-2" style="font-family: Roboto;">Exceptional Quality</h4></div> <div class="w-full flex flex-col common-css svelte-l4nkvq"><span class="text-sm " style="font-family: Roboto;">All our products are of high quality and conform to standards.</span></div></div></div></div> <div class="lg:w-1/3 sm:w-1/2 flex w-full flex-col"><div class="flex flex-row items-center"><div class="gol-wala p-4 flex items-center justify-center"><img alt="innovation" class="h-[40px] w-[40px] flex items-center justify-between"${add_attribute("src", innovation, 0)}></div> <div class="flex flex-col pl-0"><div class="flex flex-row"><h4 class="text-lg pb-2" style="font-family: Roboto;">Innovative Products</h4></div> <div class="w-full flex flex-col common-css svelte-l4nkvq"><span class="text-sm " style="font-family: Roboto;">We provide custom innovative products to solve any packaging problem and fit your brand at the same time.</span></div></div></div></div> <div class="border-top-1"></div></div> <div class="flex lg:flex-row flex-col lg:items-start items-center w-full pt-10 pb-5"><div class="w-1/2 flex flex-col"><div class="flex flex-row w-full" data-svelte-h="svelte-140xgf2"><div class="w-full"><span class="text-base text-[#687188]" style="font-family: Roboto;">SouqPack Packaging</span></div></div> <div class="w-full flex flex-col pt-5 common-css svelte-l4nkvq">${each(contentt, (column) => {
-        return `<div class="w-full mb-2"><span class="flex flex-row items-center"><span class=""><img${add_attribute("src", column.icon, 0)} alt="Email" style="width: 20px; height: 20px;"></span><span class="ml-3 text-base" style="font-family: Roboto;">${escape(column.content)}</span></span> </div>`;
+      return `<div style="background-color: #f7f8fb; font-family:Roboto;" class="w-full flex flex-row items-center justify-center pt-10"><div class="max-w-[1440px] w-full flex flex-row justify-center self-center px-4"><div class="flex flex-col items-center w-full divide-y "><div class="flex lg:flex-row flex-col lg:gap-0 gap-4 lg:items-start items-center w-full pb-10" data-svelte-h="svelte-r74ql5"><div class="lg:w-1/3 sm:w-1/2 w-full flex flex-col"><div class="flex flex-row items-center"><div class="gol-wala p-4 flex items-center justify-center"><img alt="Shipped" class="h-[40px] w-[40px] flex items-center justify-between"${add_attribute("src", shiped, 0)} title="shipped"></div> <div class="flex flex-col pl-0"><div class="flex flex-row"><h4 class="text-lg pb-2" style="font-family: Roboto;">Shipping Service</h4></div> <div class="w-full flex flex-col common-css svelte-l4nkvq"><span class="text-sm " style="font-family: Roboto;">Best Shipping Service</span></div></div></div></div> <div class="lg:w-1/3 sm:w-1/2 w-full flex flex-col"><div class="flex flex-row items-center"><div class="gol-wala p-4 flex items-center justify-center"><img alt="quality" class="h-[40px] w-[40px] flex items-center justify-between"${add_attribute("src", quality, 0)} title="quality"></div> <div class="flex flex-col pl-0"><div class="flex flex-row"><h4 class="text-lg pb-2" style="font-family: Roboto;">Exceptional Quality</h4></div> <div class="w-full flex flex-col common-css svelte-l4nkvq"><span class="text-sm " style="font-family: Roboto;">All our products are of high quality and conform to standards.</span></div></div></div></div> <div class="lg:w-1/3 sm:w-1/2 flex w-full flex-col"><div class="flex flex-row items-center"><div class="gol-wala p-4 flex items-center justify-center"><img alt="innovation" class="h-[40px] w-[40px] flex items-center justify-between"${add_attribute("src", innovation, 0)} title="innovation"></div> <div class="flex flex-col pl-0"><div class="flex flex-row"><h4 class="text-lg pb-2" style="font-family: Roboto;">Innovative Products</h4></div> <div class="w-full flex flex-col common-css svelte-l4nkvq"><span class="text-sm " style="font-family: Roboto;">We provide custom innovative products to solve any packaging problem and fit your brand at the same time.</span></div></div></div></div> <div class="border-top-1"></div></div> <div class="flex lg:flex-row flex-col lg:items-start items-center w-full pt-10 pb-5"><div class="w-1/2 flex flex-col"><div class="flex flex-row w-full" data-svelte-h="svelte-140xgf2"><div class="w-full"><span class="text-base text-[#687188]" style="font-family: Roboto;">SouqPack Packaging</span></div></div> <div class="w-full flex flex-col pt-5 common-css svelte-l4nkvq">${each(contentt, (column) => {
+        return `<div class="w-full mb-2"><span class="flex flex-row items-center"><span class=""><img${add_attribute("src", column.icon, 0)} alt="Email" style="width: 20px; height: 20px;" title="souqpack"></span><span class="ml-3 text-base" style="font-family: Roboto;">${escape(column.content)}</span></span> </div>`;
       })}</div> </div> <div class="w-1/2 flex flex-col"><div class="flex flex-row " data-svelte-h="svelte-1bbt7vw"><div class="text-lg font-bold" style="font-family: RobotoMedium;"><h2>Useful Links</h2></div></div> <div class="w-full flex flex-col pt-5 common-css svelte-l4nkvq">${each(links, (column) => {
         return `<div class="w-full p-1"><a${add_attribute("aria-label", column.link, 0)}${add_attribute("title", column.link, 0)}${add_attribute("href", `${base}/${column.href}`, 0)} class="text-base" style="font-family: Roboto;">${escape(column.link)}</a> </div>`;
       })}</div></div> <div class="w-1/2 flex flex-col"><div class="flex flex-row w-full" data-svelte-h="svelte-1vkdbqq"><div class="w-full"><h2 class="text-lg" style="font-family: RobotoMedium;">Terms And Conditions</h2></div></div> <div class="w-full flex flex-col pt-5 common-css svelte-l4nkvq">${each(Conditions, (column) => {
         return `<div class="w-full p-1"><a${add_attribute("title", column.c, 0)}${add_attribute("aria-label", column.c, 0)}${add_attribute("href", `${base}/${column.href}`, 0)} class="text-base" style="font-family: Roboto;">${escape(column.c)}</a> </div>`;
       })}</div></div></div> <div class="w-full flex flex-col items-center sm:items-start"><h2 class="pt-10 " style="font-family: RobotoMedium;" data-svelte-h="svelte-w4vd4">Download Souqpack App</h2> <div class="pt-2 flex flex-row gap-2 pb-2">${each(souqpackappbutton, (icon) => {
-        return `<a${add_attribute("href", icon.link, 0)}><img alt="Download app" class="w-[120px] h-[40px] "${add_attribute("src", icon.icon, 0)}> </a>`;
+        return `<a${add_attribute("href", icon.link, 0)}><img alt="Download app" class="w-[120px] h-[40px] "${add_attribute("src", icon.icon, 0)}${add_attribute("title", icon.name, 0)}> </a>`;
       })}</div></div> <div class="border-top-1"></div> <div class="flex lg:flex-row flex-col w-full pt-10 pb-10 items-center lg:gap-0 gap-4"><div class="lg:w-1/3 w-full flex flex-row lg:justify-start justify-center">${each(socialMediaIcons, (icon, index8) => {
-        return `${index8 === 0 ? `<span class="common-css p-2 text-lg hidden sm:block svelte-l4nkvq" data-svelte-h="svelte-edlbt8">Follow</span>` : ``} <a${add_attribute("href", icon.link, 0)} aria-label="Social Icon"><img alt="social icon" class="w-12 h-12"${add_attribute("src", icon.icon, 0)}> </a>`;
+        return `${index8 === 0 ? `<span class="common-css p-2 text-lg hidden sm:block svelte-l4nkvq" data-svelte-h="svelte-edlbt8">Follow</span>` : ``} <a${add_attribute("href", icon.link, 0)} aria-label="Social Icon"><img alt="social icon" class="w-12 h-12"${add_attribute("src", icon.icon, 0)}${add_attribute("title", icon.name, 0)}> </a>`;
       })}</div> <div class="lg:w-1/3 w-full flex flex-col items-center justify-center"><div class="w-full flex flex-col common-css text-center svelte-l4nkvq"><span>${escape(copy_right)}(v1.1)</span></div></div> <div class="lg:w-1/3 w-full flex flex-row lg:justify-end justify-center flex-wrap">${each(paymenticons, (icon) => {
-        return `<span><img alt="Payment" class="w-[60px] h-[40px] mr-1"${add_attribute("src", icon.icon, 0)}> </span>`;
+        return `<span><img alt="Payment" class="w-[60px] h-[40px] mr-1"${add_attribute("src", icon.icon, 0)}${add_attribute("title", icon.name, 0)}> </span>`;
       })}</div> <div class="border-top-1"></div></div></div></div> </div>`;
     });
   }
@@ -973,12 +971,16 @@ var init_page_svelte = __esm({
     init_ssr();
     init_page2();
     init_page();
+    init_stores();
     Page$12 = create_ssr_component(($$result, $$props, $$bindings, slots$1) => {
+      let $page, $$unsubscribe_page;
+      $$unsubscribe_page = subscribe(page, (value) => $page = value);
       let { data } = $$props;
-      console.log("dd", data);
+      const currentUrl = $page.url;
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
-      return `${`${validate_component(Page, "Loading").$$render($$result, {}, {}, {})}`}`;
+      $$unsubscribe_page();
+      return `${$$result.head += `<!-- HEAD_svelte-1u6b6hi_START --><link rel="canonical"${add_attribute("href", currentUrl, 0)}><!-- HEAD_svelte-1u6b6hi_END -->`, ""} ${`${validate_component(Page, "Loading").$$render($$result, {}, {}, {})}`}`;
     });
     Page3 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { data } = $$props;
@@ -1007,7 +1009,7 @@ var init__3 = __esm({
     index3 = 6;
     component3 = async () => component_cache3 ??= (await Promise.resolve().then(() => (init_page_svelte(), page_svelte_exports))).default;
     server_id = "src/routes/customize/[slug]/+page.server.js";
-    imports3 = ["_app/immutable/nodes/6.152865a0.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/page.14f8c491.js", "_app/immutable/chunks/stores.c48fab05.js", "_app/immutable/chunks/singletons.4b2d37d2.js", "_app/immutable/chunks/page.8d9c1114.js", "_app/immutable/chunks/auth.6035c411.js"];
+    imports3 = ["_app/immutable/nodes/6.6dbf40bb.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/page.901bc922.js", "_app/immutable/chunks/stores.df9b739c.js", "_app/immutable/chunks/singletons.980f5eb1.js", "_app/immutable/chunks/page.123f46c5.js", "_app/immutable/chunks/auth.6035c411.js", "_app/immutable/chunks/stores.0b5af109.js"];
     stylesheets3 = ["_app/immutable/assets/page.90ca9ceb.css"];
     fonts3 = [];
   }
@@ -1139,13 +1141,18 @@ var init_page_svelte2 = __esm({
   ".svelte-kit/output/server/entries/pages/dashboard/_page.svelte.js"() {
     init_ssr();
     init_page();
+    init_stores();
     Page4 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let $page, $$unsubscribe_page;
+      $$unsubscribe_page = subscribe(page, (value) => $page = value);
       let { data } = $$props;
       console.log("cust data", data?.props?.customdata.data.order.final_form);
       console.log("dataaa", data?.props?.customdata.data.order.c_title);
+      const currentUrl = $page.url;
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
-      return `${`${validate_component(Page, "Loading").$$render($$result, {}, {}, {})}`}`;
+      $$unsubscribe_page();
+      return `${$$result.head += `<!-- HEAD_svelte-w66d0i_START --><link rel="canonical"${add_attribute("href", currentUrl, 0)}><!-- HEAD_svelte-w66d0i_END -->`, ""} ${`${validate_component(Page, "Loading").$$render($$result, {}, {}, {})}`}`;
     });
   }
 });
@@ -1168,123 +1175,32 @@ var init__4 = __esm({
     index4 = 7;
     component4 = async () => component_cache4 ??= (await Promise.resolve().then(() => (init_page_svelte2(), page_svelte_exports2))).default;
     universal_id = "src/routes/dashboard/+page.js";
-    imports4 = ["_app/immutable/nodes/7.9310e71b.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/page.14f8c491.js", "_app/immutable/chunks/stores.c48fab05.js", "_app/immutable/chunks/singletons.4b2d37d2.js", "_app/immutable/chunks/auth.6035c411.js", "_app/immutable/chunks/page.8d9c1114.js"];
+    imports4 = ["_app/immutable/nodes/7.a08d5b2c.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/page.901bc922.js", "_app/immutable/chunks/stores.df9b739c.js", "_app/immutable/chunks/singletons.980f5eb1.js", "_app/immutable/chunks/auth.6035c411.js", "_app/immutable/chunks/page.123f46c5.js", "_app/immutable/chunks/stores.0b5af109.js"];
     stylesheets4 = ["_app/immutable/assets/page.90ca9ceb.css"];
     fonts4 = [];
   }
 });
 
-// .svelte-kit/output/server/entries/pages/pay/_id_/_page.server.js
-var page_server_exports2 = {};
-__export(page_server_exports2, {
+// .svelte-kit/output/server/entries/pages/pay/_id_/_page.js
+var page_exports2 = {};
+__export(page_exports2, {
+  csr: () => csr,
   load: () => load3,
-  prerender: () => prerender2
+  prerender: () => prerender2,
+  ssr: () => ssr
 });
 async function load3({ params }) {
-  try {
-    const orderId = params.id;
-    const response = await fetch("https://admin.souqpack.com/api/get_important_data", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        lang_id: 2,
-        region_id: 1
-      })
-    });
-    const data = await response.json();
-    const footer_data = {
-      email: data.data.email,
-      phone: data.data.phone,
-      address: data.data.address,
-      footer_about: data.data.footer_about,
-      facebook: data.data.facebook,
-      instagram: data.data.instagram,
-      twitter: data.data.twitter,
-      youtube: data.data.youtube,
-      snapchat: data.data.snapchat,
-      copy_right: data.data.copy_right,
-      footers: data.data.footers
-    };
-    const catsR = await fetch("https://admin.souqpack.com/api/get_categories", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        lang_id: 2,
-        region_id: 1
-      })
-    });
-    const dataCats = await catsR.json();
-    const orderR = await fetch("https://admin.souqpack.com/api/get_order_web", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        lang_id: 2,
-        region_id: 1,
-        is_guest: 0,
-        token: "6a325475cb6af3a3cfaa66683b24a0f7",
-        order_id: orderId
-      })
-    });
-    const dataOrder = await orderR.json();
-    const payFortR = await fetch("https://admin.souqpack.com/api/get_payfort", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        lang_id: 2,
-        region_id: 1,
-        is_guest: 0,
-        token: "6a325475cb6af3a3cfaa66683b24a0f7",
-        order_id: orderId
-      })
-    });
-    const dataPayfort = await payFortR.json();
-    console.log("payfort");
-    console.log(dataPayfort.payfort);
-    console.log("order");
-    console.log(dataOrder);
-    if (data.action == "success" && dataCats.action == "success" && dataOrder.action == "success" && dataPayfort.action == "success") {
-      return {
-        props: {
-          browser: false,
-          langs: data.data.langs,
-          regions: data.data.regions,
-          cats: dataCats.data.categories,
-          home: {},
-          footer: footer_data,
-          product: {},
-          category: {},
-          order: dataOrder.data,
-          payfort: dataPayfort.payfort
-        }
-      };
-    } else {
-      return {
-        status: 500,
-        // Server error status code
-        error: "Failed to fetch data from the API."
-      };
-    }
-  } catch (error2) {
-    console.error("Error fetching data:", error2);
-    return {
-      status: 500,
-      // Server error status code
-      error: "Failed to fetch data from the API."
-    };
+  {
+    console.log("I'm trying to render on server");
+    return;
   }
 }
-var prerender2;
-var init_page_server2 = __esm({
-  ".svelte-kit/output/server/entries/pages/pay/_id_/_page.server.js"() {
+var prerender2, ssr, csr;
+var init_page4 = __esm({
+  ".svelte-kit/output/server/entries/pages/pay/_id_/_page.js"() {
     prerender2 = false;
+    ssr = false;
+    csr = true;
   }
 });
 
@@ -1304,6 +1220,7 @@ var init_page_svelte3 = __esm({
       let { order } = $$props;
       let { payfort } = $$props;
       console.log("payfort", payfort);
+      console.log("order", order);
       let total = order.total;
       let orderId = order.id;
       console.log("orderId", orderId);
@@ -1312,10 +1229,11 @@ var init_page_svelte3 = __esm({
         $$bindings.order(order);
       if ($$props.payfort === void 0 && $$bindings.payfort && payfort !== void 0)
         $$bindings.payfort(payfort);
-      return `<main><div class="flex flex-row items-center justify-center w-full"><div class="flex flex-col max-w-[1280px] w-full self-center justify-start items-start px-5 py-5 bg-white shadow-xl"><div class="flex flex-col w-full"> ${`<div class="col-span-6"><h4>Pay ${escape(total)} ${escape(currency)} to complete your order</h4> <div class="flex justify-center"><form method="POST" action="https://checkout.payfort.com/FortAPI/paymentPage"><input type="hidden" name="access_code"${add_attribute("value", payfort.vals.access_code, 0)}> <input type="hidden" name="amount"${add_attribute("value", payfort.vals.amount, 0)}> <input type="hidden" name="command"${add_attribute("value", payfort.vals.command, 0)}> <input type="hidden" name="currency"${add_attribute("value", payfort.vals.currency, 0)}> <input type="hidden" name="customer_email"${add_attribute("value", myEmail, 0)}> <input type="hidden" name="language"${add_attribute("value", payfort.vals.language, 0)}> <input type="hidden" name="merchant_identifier"${add_attribute("value", payfort.vals.merchant_identifier, 0)}> <input type="hidden" name="merchant_reference"${add_attribute("value", orderId, 0)}> <input type="hidden" name="return_url"${add_attribute("value", payfort.vals.return_url, 0)}> <input type="hidden" name="signature"${add_attribute("value", payfort.signature, 0)}> <button type="submit" class="block w-full px-4 py-2 text-center bg-[#f9ca03] text-white rounded " data-svelte-h="svelte-683a05">Pay with Credit Card</button></form></div></div>`}</div></div></div></main>`;
+      return `<main><div class="flex flex-row items-center justify-center w-full"><div class="flex flex-col max-w-[1280px] w-full self-center justify-start items-start px-5 py-5 bg-white shadow-xl"><div class="flex flex-col w-full"> ${`<div class="col-span-6"><h4>Pay ${escape(total)} ${escape(currency)} to complete your order</h4> <div class="flex justify-center"><form method="POST" action="https://checkout.payfort.com/FortAPI/paymentPage"><input type="hidden" name="access_code"${add_attribute("value", payfort.vals.access_code, 0)}> <input type="hidden" name="amount"${add_attribute("value", payfort.vals.amount, 0)}> <input type="hidden" name="command"${add_attribute("value", payfort.vals.command, 0)}> <input type="hidden" name="currency"${add_attribute("value", payfort.vals.currency, 0)}> <input type="hidden" name="customer_email"${add_attribute("value", payfort.vals.customer_email, 0)}> <input type="hidden" name="language"${add_attribute("value", payfort.vals.language, 0)}> <input type="hidden" name="merchant_identifier"${add_attribute("value", payfort.vals.merchant_identifier, 0)}> <input type="hidden" name="merchant_reference"${add_attribute("value", orderId, 0)}> <input type="hidden" name="return_url"${add_attribute("value", payfort.vals.return_url, 0)}> <input type="hidden" name="signature"${add_attribute("value", payfort.signature, 0)}> <button type="submit" class="block w-full px-4 py-2 text-center bg-[#f9ca03] text-white rounded " data-svelte-h="svelte-683a05">Pay with Credit Card</button></form></div></div>`}</div></div></div></main>`;
     });
     Page5 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { data } = $$props;
+      console.log("pay page data", data);
       const order = data.props?.order;
       const payfort = data.props?.payfort;
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
@@ -1332,26 +1250,26 @@ __export(__exports5, {
   fonts: () => fonts5,
   imports: () => imports5,
   index: () => index5,
-  server: () => page_server_exports2,
-  server_id: () => server_id2,
-  stylesheets: () => stylesheets5
+  stylesheets: () => stylesheets5,
+  universal: () => page_exports2,
+  universal_id: () => universal_id2
 });
-var index5, component_cache5, component5, server_id2, imports5, stylesheets5, fonts5;
+var index5, component_cache5, component5, universal_id2, imports5, stylesheets5, fonts5;
 var init__5 = __esm({
   ".svelte-kit/output/server/nodes/11.js"() {
-    init_page_server2();
+    init_page4();
     index5 = 11;
     component5 = async () => component_cache5 ??= (await Promise.resolve().then(() => (init_page_svelte3(), page_svelte_exports3))).default;
-    server_id2 = "src/routes/pay/[id]/+page.server.js";
-    imports5 = ["_app/immutable/nodes/11.661e7276.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/page.14f8c491.js", "_app/immutable/chunks/stores.c48fab05.js", "_app/immutable/chunks/singletons.4b2d37d2.js"];
+    universal_id2 = "src/routes/pay/[id]/+page.js";
+    imports5 = ["_app/immutable/nodes/11.452a1829.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/page.901bc922.js", "_app/immutable/chunks/stores.df9b739c.js", "_app/immutable/chunks/singletons.980f5eb1.js"];
     stylesheets5 = ["_app/immutable/assets/page.90ca9ceb.css"];
     fonts5 = [];
   }
 });
 
 // .svelte-kit/output/server/entries/pages/search/_slug_/_page.server.js
-var page_server_exports3 = {};
-__export(page_server_exports3, {
+var page_server_exports2 = {};
+__export(page_server_exports2, {
   load: () => load4,
   prerender: () => prerender3
 });
@@ -1438,7 +1356,7 @@ async function load4({ params }) {
   }
 }
 var prerender3;
-var init_page_server3 = __esm({
+var init_page_server2 = __esm({
   ".svelte-kit/output/server/entries/pages/search/_slug_/_page.server.js"() {
     prerender3 = false;
   }
@@ -1471,8 +1389,8 @@ var init_page_svelte4 = __esm({
       if ($$props.data === void 0 && $$bindings.data && data !== void 0)
         $$bindings.data(data);
       return `<div class="flex flex-row justify-center w-full"><div class="flex flex-row max-w-[1290px] w-full items-center"><div class="items-center w-full mt-14"><div class="flex flex-row text-2xl mt-4 mb-4">Search: ${escape(data.props?.searchText)}</div> <div class="flex flex-row items-center justify-between xl:mx-0 mx-4"><div class="relative inline-block text-left"><div><button type="button" class="inline-flex h-[40px] w-full justify-center gap-x-1.5 bg-white px-3 py-2 items-center text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="true" aria-haspopup="true" data-svelte-h="svelte-mu7mtm">Default Sorting
-							<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></button></div> ${``}</div> <div class="flex flex-row-reverse"><div${add_attribute("class", `w-10 h-10 m-1 rounded-lg ${"bg-white"} border-y-orange-400 hover:border-yellow-500 `, 0)}><button class="" data-svelte-h="svelte-cnqrci"><img class="p-3"${add_attribute("src", list, 0)} alt="list"></button></div> <div${add_attribute("class", `w-10 h-10 m-1 rounded-lg ${"bg-white"} border-y-orange-400 hover:border-yellow-500 0`, 0)}><button class="" data-svelte-h="svelte-1v0dbjo"><img class="p-3"${add_attribute("src", menu, 0)} alt="manue"></button></div></div></div> <div class="flex flex-row items-center flex-wrap lg:gap-3 w-full self-center mt-4 mb-4 xl:mx-0 mx-4">${each(products, (product, index8) => {
-        return `<a${add_attribute("href", `${base}/product/${product.slug}`, 0)}${add_attribute("class", "md:w-[247px] w-1/2 lg:pb-0 pb-2 h-auto " + (index8 % 2 == 0 ? " pr-1 lg:pr-0 " : "pl-1  lg:pr-0"), 0)}><div class="cursor-pointer flex flex-col border border-[#f5f5f5] hover:border-[#f9ca03] "><div class="flex flex-row justify-center items-center md:w-[245px] w-full md:h-[200px] h-full"><img${add_attribute("src", `https://admin.souqpack.com/resources/uploads/products/webp/w245/${product.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} class="md:w-[245px] w-full h-full md:h-[200px]" alt="Product"></div>  <div class="p-[15px] min-h-[80px]"><span style="font-family: 'Roboto'; font-weight:500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; text-transform: capitalize; display: -webkit-box; " class="text-[#222] lg:text-[18px] text-sm ">${escape(product.title)}</span> <span class="text-[#222] lg:text-[18px] text-sm " style="font-family: 'RobotoMedium'; font-weight:500;">${escape(product.real_price_text)}</span> </div></div> </a>`;
+							<svg class="-mr-1 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"></path></svg></button></div> ${``}</div> <div class="flex flex-row-reverse"><div${add_attribute("class", `w-10 h-10 m-1 rounded-lg ${"bg-white"} border-y-orange-400 hover:border-yellow-500 `, 0)}><button class="" data-svelte-h="svelte-7mpyyd"><img class="p-3"${add_attribute("src", list, 0)} alt="list" title="list"></button></div> <div${add_attribute("class", `w-10 h-10 m-1 rounded-lg ${"bg-white"} border-y-orange-400 hover:border-yellow-500 0`, 0)}><button class="" data-svelte-h="svelte-in9dgt"><img class="p-3"${add_attribute("src", menu, 0)} alt="manue" title="manue"></button></div></div></div> <div class="flex flex-row items-center flex-wrap lg:gap-3 w-full self-center mt-4 mb-4 xl:mx-0 mx-4">${each(products, (product, index8) => {
+        return `<a${add_attribute("href", `${base}/product/${product.slug}`, 0)}${add_attribute("class", "md:w-[247px] w-1/2 lg:pb-0 pb-2 h-auto " + (index8 % 2 == 0 ? " pr-1 lg:pr-0 " : "pl-1  lg:pr-0"), 0)}><div class="cursor-pointer flex flex-col border border-[#f5f5f5] hover:border-[#f9ca03] "><div class="flex flex-row justify-center items-center md:w-[245px] w-full md:h-[200px] h-full"><img${add_attribute("src", `https://admin.souqpack.com/resources/uploads/products/webp/w245/${product.image.replace(".png", ".webp").replace(".jpg", ".webp").replace(".jpeg", ".webp")}`, 0)} class="md:w-[245px] w-full h-full md:h-[200px]" alt="Product"${add_attribute("title", product.title, 0)}></div>  <div class="p-[15px] min-h-[80px]"><span style="font-family: 'Roboto'; font-weight:500; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; text-transform: capitalize; display: -webkit-box; " class="text-[#222] lg:text-[18px] text-sm ">${escape(product.title)}</span> <span class="text-[#222] lg:text-[18px] text-sm " style="font-family: 'RobotoMedium'; font-weight:500;">${escape(product.real_price_text)}</span> </div></div> </a>`;
       })}</div></div></div></div> `;
     });
     Page6 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -1491,26 +1409,26 @@ __export(__exports6, {
   fonts: () => fonts6,
   imports: () => imports6,
   index: () => index6,
-  server: () => page_server_exports3,
-  server_id: () => server_id3,
+  server: () => page_server_exports2,
+  server_id: () => server_id2,
   stylesheets: () => stylesheets6
 });
-var index6, component_cache6, component6, server_id3, imports6, stylesheets6, fonts6;
+var index6, component_cache6, component6, server_id2, imports6, stylesheets6, fonts6;
 var init__6 = __esm({
   ".svelte-kit/output/server/nodes/13.js"() {
-    init_page_server3();
+    init_page_server2();
     index6 = 13;
     component6 = async () => component_cache6 ??= (await Promise.resolve().then(() => (init_page_svelte4(), page_svelte_exports4))).default;
-    server_id3 = "src/routes/search/[slug]/+page.server.js";
-    imports6 = ["_app/immutable/nodes/13.c7ba91cd.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/page.14f8c491.js", "_app/immutable/chunks/stores.c48fab05.js", "_app/immutable/chunks/singletons.4b2d37d2.js", "_app/immutable/chunks/menu.733ffb41.js"];
+    server_id2 = "src/routes/search/[slug]/+page.server.js";
+    imports6 = ["_app/immutable/nodes/13.f548d6d2.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/page.901bc922.js", "_app/immutable/chunks/stores.df9b739c.js", "_app/immutable/chunks/singletons.980f5eb1.js", "_app/immutable/chunks/menu.733ffb41.js"];
     stylesheets6 = ["_app/immutable/assets/page.90ca9ceb.css"];
     fonts6 = [];
   }
 });
 
 // .svelte-kit/output/server/entries/pages/view_custom_order/_slug_/_page.server.js
-var page_server_exports4 = {};
-__export(page_server_exports4, {
+var page_server_exports3 = {};
+__export(page_server_exports3, {
   load: () => load5
 });
 async function load5({ params }) {
@@ -1591,7 +1509,7 @@ async function load5({ params }) {
     };
   }
 }
-var init_page_server4 = __esm({
+var init_page_server3 = __esm({
   ".svelte-kit/output/server/entries/pages/view_custom_order/_slug_/_page.server.js"() {
   }
 });
@@ -1607,7 +1525,7 @@ var init_page_svelte5 = __esm({
     init_ssr();
     init_page2();
     Page$15 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-      return `<h1 data-svelte-h="svelte-1nkr1eu">view custom order</h1>`;
+      return ``;
     });
     Page7 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       let { data } = $$props;
@@ -1625,18 +1543,18 @@ __export(__exports7, {
   fonts: () => fonts7,
   imports: () => imports7,
   index: () => index7,
-  server: () => page_server_exports4,
-  server_id: () => server_id4,
+  server: () => page_server_exports3,
+  server_id: () => server_id3,
   stylesheets: () => stylesheets7
 });
-var index7, component_cache7, component7, server_id4, imports7, stylesheets7, fonts7;
+var index7, component_cache7, component7, server_id3, imports7, stylesheets7, fonts7;
 var init__7 = __esm({
   ".svelte-kit/output/server/nodes/15.js"() {
-    init_page_server4();
+    init_page_server3();
     index7 = 15;
     component7 = async () => component_cache7 ??= (await Promise.resolve().then(() => (init_page_svelte5(), page_svelte_exports5))).default;
-    server_id4 = "src/routes/view_custom_order/[slug]/+page.server.js";
-    imports7 = ["_app/immutable/nodes/15.5ea7db67.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js", "_app/immutable/chunks/page.14f8c491.js", "_app/immutable/chunks/stores.c48fab05.js", "_app/immutable/chunks/singletons.4b2d37d2.js"];
+    server_id3 = "src/routes/view_custom_order/[slug]/+page.server.js";
+    imports7 = ["_app/immutable/nodes/15.7301ebb8.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js", "_app/immutable/chunks/page.901bc922.js", "_app/immutable/chunks/stores.df9b739c.js", "_app/immutable/chunks/singletons.980f5eb1.js"];
     stylesheets7 = ["_app/immutable/assets/page.90ca9ceb.css"];
     fonts7 = [];
   }
@@ -2201,7 +2119,7 @@ var options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<!-- <link rel="icon" href="' + assets2 + '/favicon.png" /> -->\r\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\r\n		<title>Souqpack | We pack everything you can imagine</title>\r\n		<link rel="icon" id="appFavicon" type="image/png" href="http://admin.souqpack.com/resources/uploads/favicon/d1d3e96f5e14c301c972ebe7ab391f1f.png">\r\n		<meta\r\n			name="description"\r\n			content="We are a packing compnay, we sell ready made and custom packing solutions for your business."\r\n		/>\r\n		' + head + '\r\n\r\n		<style>\r\n			\r\n		</style>\r\n	</head>\r\n	<body data-sveltekit-preload-data="hover">\r\n		<div style="display: contents">' + body + "</div>\r\n		\r\n	</body>\r\n	\r\n</html>\r\n\r\n",
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<!-- <link rel="icon" href="' + assets2 + '/favicon.png" /> -->\r\n		<meta name="viewport" content="width=device-width, initial-scale=1" />\r\n		<!-- <title>Souqpack | We pack everything you can imagine</title> -->\r\n		<link rel="icon" id="appFavicon" type="image/png" href="http://admin.souqpack.com/resources/uploads/favicon/d1d3e96f5e14c301c972ebe7ab391f1f.png">\r\n		\r\n		' + head + '\r\n\r\n		<style>\r\n			\r\n		</style>\r\n	</head>\r\n	<body data-sveltekit-preload-data="hover">\r\n		<div style="display: contents">' + body + "</div>\r\n		\r\n	</body>\r\n	\r\n</html>\r\n\r\n",
     error: ({ status, message }) => '<!DOCTYPE html>\n<html lang="en">\n	<head>\n		<meta charset="utf-8" />\n		<title>' + message + `</title>
 
 		<style>
@@ -2263,7 +2181,7 @@ var options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "ta6f0w"
+  version_hash: "56n16j"
 };
 function get_hooks() {
   return {};
@@ -2972,7 +2890,7 @@ async function load_data({
   server_data_promise,
   state,
   resolve_opts,
-  csr
+  csr: csr2
 }) {
   const server_data_node = await server_data_promise;
   if (!node?.universal?.load) {
@@ -2983,7 +2901,7 @@ async function load_data({
     params: event.params,
     data: server_data_node?.data ?? null,
     route: event.route,
-    fetch: create_universal_fetch(event, state, fetched, csr, resolve_opts),
+    fetch: create_universal_fetch(event, state, fetched, csr2, resolve_opts),
     setHeaders: event.setHeaders,
     depends: () => {
     },
@@ -2992,7 +2910,7 @@ async function load_data({
   const data = result ? await unwrap_promises(result) : null;
   return data;
 }
-function create_universal_fetch(event, state, fetched, csr, resolve_opts) {
+function create_universal_fetch(event, state, fetched, csr2, resolve_opts) {
   return async (input, init2) => {
     const cloned_body = input instanceof Request && input.body ? input.clone().body : null;
     const cloned_headers = input instanceof Request && [...input.headers].length ? new Headers(input.headers) : init2?.headers;
@@ -3070,7 +2988,7 @@ function create_universal_fetch(event, state, fetched, csr, resolve_opts) {
         return Reflect.get(response2, key2, response2);
       }
     });
-    if (csr) {
+    if (csr2) {
       const get = response.headers.get;
       response.headers.get = (key2) => {
         const lower = key2.toLowerCase();
@@ -3934,9 +3852,9 @@ async function respond_with_error({
   try {
     const branch = [];
     const default_layout = await manifest2._.nodes[0]();
-    const ssr = get_option([default_layout], "ssr") ?? true;
-    const csr = get_option([default_layout], "csr") ?? true;
-    if (ssr) {
+    const ssr2 = get_option([default_layout], "ssr") ?? true;
+    const csr2 = get_option([default_layout], "csr") ?? true;
+    if (ssr2) {
       state.error = true;
       const server_data_promise = load_server_data({
         event,
@@ -3954,7 +3872,7 @@ async function respond_with_error({
         resolve_opts,
         server_data_promise,
         state,
-        csr
+        csr: csr2
       });
       branch.push(
         {
@@ -3975,7 +3893,7 @@ async function respond_with_error({
       manifest: manifest2,
       state,
       page_config: {
-        ssr,
+        ssr: ssr2,
         csr: get_option([default_layout], "csr") ?? true
       },
       status,
@@ -4309,7 +4227,7 @@ async function render_page(event, page2, options2, manifest2, state, resolve_opt
         }
       });
     });
-    const csr = get_option(nodes, "csr") ?? true;
+    const csr2 = get_option(nodes, "csr") ?? true;
     const load_promises = nodes.map((node, i) => {
       if (load_error)
         throw load_error;
@@ -4329,7 +4247,7 @@ async function render_page(event, page2, options2, manifest2, state, resolve_opt
             resolve_opts,
             server_data_promise: server_promises[i],
             state,
-            csr
+            csr: csr2
           });
         } catch (e3) {
           load_error = /** @type {Error} */
@@ -5167,7 +5085,7 @@ var manifest = (() => {
     assets: /* @__PURE__ */ new Set(["80e07714470bc3d4ae8d650d96fc63ad11128b6c.jpeg", "a43b1d1a20cd94e11e186a4c84f460894a40c51a.jpeg", "assets/icons/cart.webp", "assets/icons/heart.webp", "assets/icons/search.webp", "assets/icons/shopping-bag.png", "assets/icons/user.webp", "assets/images/logo.webp", "assets/images/sudiaflag.webp", "assets/images/sudiaflag2.webp", "assets/images/uaeflag.webp", "assets/images/uaeflag2.webp", "assets/sliders/slide-2-1.webp", "assets/sliders/slide-2-2.webp", "assets/sliders/sliderbig/1.webp", "assets/sliders/sliderbig/2.webp", "assets/sliders/sliderbig/3.webp", "favicon.png", "g/80e07714470bc3d4ae8d650d96fc63ad11128b6c.jpeg", "g/a43b1d1a20cd94e11e186a4c84f460894a40c51a.jpeg"]),
     mimeTypes: { ".jpeg": "image/jpeg", ".webp": "image/webp", ".png": "image/png" },
     _: {
-      client: { "start": "_app/immutable/entry/start.ee7fe985.js", "app": "_app/immutable/entry/app.ef274b99.js", "imports": ["_app/immutable/entry/start.ee7fe985.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/singletons.4b2d37d2.js", "_app/immutable/entry/app.ef274b99.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.f931a049.js"], "stylesheets": [], "fonts": [] },
+      client: { "start": "_app/immutable/entry/start.cefc8e66.js", "app": "_app/immutable/entry/app.c06757e2.js", "imports": ["_app/immutable/entry/start.cefc8e66.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/singletons.980f5eb1.js", "_app/immutable/entry/app.c06757e2.js", "_app/immutable/chunks/scheduler.ce710c66.js", "_app/immutable/chunks/index.d2955eda.js"], "stylesheets": [], "fonts": [] },
       nodes: [
         __memo(() => Promise.resolve().then(() => (init__(), __exports))),
         __memo(() => Promise.resolve().then(() => (init__2(), __exports2))),
@@ -5220,7 +5138,7 @@ var manifest = (() => {
     }
   };
 })();
-var prerendered = /* @__PURE__ */ new Set(["/signup", "/signup/__data.json", "/login", "/login/__data.json", "/cart", "/cart/__data.json", "/checkout", "/checkout/__data.json", "/page/contact-us", "/page/contact-us/__data.json", "/", "/__data.json", "/category/non-woven-bags-2-15", "/category/non-woven-bags-2-15/__data.json", "/category/plastic-bags-2-17", "/category/plastic-bags-2-17/__data.json", "/category/laundry-bag-2-45", "/category/laundry-bag-2-45/__data.json", "/category/coffee-bag-2-37", "/category/coffee-bag-2-37/__data.json", "/category/plastic-bottles-125", "/category/plastic-bottles-125/__data.json", "/category/bags-2-1", "/category/bags-2-1/__data.json", "/category/general-purpose-tub-2-75", "/category/general-purpose-tub-2-75/__data.json", "/category/cake-containers-2-69", "/category/cake-containers-2-69/__data.json", "/category/salad-container-2-57", "/category/salad-container-2-57/__data.json", "/category/plastic-products-3", "/category/plastic-products-3/__data.json", "/category/paper-bags-3-95", "/category/paper-bags-3-95/__data.json", "/category/microwave-container-3-71", "/category/microwave-container-3-71/__data.json", "/category/tray-2-77", "/category/tray-2-77/__data.json", "/category/carton-products-2-23", "/category/carton-products-2-23/__data.json", "/category/straw-2-85", "/category/straw-2-85/__data.json", "/category/cutlery-2-81", "/category/cutlery-2-81/__data.json", "/category/dish-2-79", "/category/dish-2-79/__data.json", "/category/pizza-box-2-53", "/category/pizza-box-2-53/__data.json", "/category/paper-bakery-moulds-2-83", "/category/paper-bakery-moulds-2-83/__data.json", "/category/carton-products-3-5", "/category/carton-products-3-5/__data.json", "/category/cake-board-3-87", "/category/cake-board-3-87/__data.json", "/category/rectangle-container-3-59", "/category/rectangle-container-3-59/__data.json", "/category/paper-box-2-49", "/category/paper-box-2-49/__data.json", "/category/paper-bowl-3-97", "/category/paper-bowl-3-97/__data.json", "/category/paper-holder-101", "/category/paper-holder-101/__data.json", "/category/plastic-cups-2-29", "/category/plastic-cups-2-29/__data.json", "/category/paper-cup-2-27", "/category/paper-cup-2-27/__data.json", "/category/sauce-containers-3-73", "/category/sauce-containers-3-73/__data.json", "/category/napkins-2-9", "/category/napkins-2-9/__data.json", "/category/cups--bowls-2-7", "/category/cups--bowls-2-7/__data.json", "/category/napkin-2-31", "/category/napkin-2-31/__data.json", "/category/muffin-cup-131", "/category/muffin-cup-131/__data.json", "/category/lid-2-41", "/category/lid-2-41/__data.json", "/category/paper-wraps-2-35", "/category/paper-wraps-2-35/__data.json", "/category/refreshing-wet-wipes-2-33", "/category/refreshing-wet-wipes-2-33/__data.json", "/category/aluminum-paper-2-55", "/category/aluminum-paper-2-55/__data.json", "/category/cling-film-103", "/category/cling-film-103/__data.json", "/category/wraps-2-11", "/category/wraps-2-11/__data.json", "/category/sterilization--hygiene-3-111", "/category/sterilization--hygiene-3-111/__data.json", "/page/terms-and-conditions", "/page/terms-and-conditions/__data.json", "/category/sterilization--hygiene-109", "/category/sterilization--hygiene-109/__data.json", "/page/about-us", "/page/about-us/__data.json", "/page/return-policy", "/page/return-policy/__data.json", "/page/privacy-policy", "/page/privacy-policy/__data.json", "/category/foil-dishes-107", "/category/foil-dishes-107/__data.json", "/category/-102-113", "/category/-102-113/__data.json", "/category/foil-container-129", "/category/foil-container-129/__data.json", "/category/-103-115", "/category/-103-115/__data.json", "/category/foam-cup-2-119", "/category/foam-cup-2-119/__data.json", "/category/foam-plates-123", "/category/foam-plates-123/__data.json", "/category/container-foam-121", "/category/container-foam-121/__data.json", "/page/faq", "/page/faq/__data.json", "/product/kraft-paper-bag-with-handle-21", "/product/kraft-paper-bag-with-handle-21/__data.json", "/product/pure-aluminium-foil-zipper-bag-7", "/product/pure-aluminium-foil-zipper-bag-7/__data.json", "/product/non-woven-bag-with-handle-33", "/product/non-woven-bag-with-handle-33/__data.json", "/product/non-woven-bag-d-cut-31", "/product/non-woven-bag-d-cut-31/__data.json", "/product/a-bag-with-glue-on-the-back-15", "/product/a-bag-with-glue-on-the-back-15/__data.json", "/product/laundry-bag-2-37", "/product/laundry-bag-2-37/__data.json", "/product/double-wall-paper-cup-43", "/product/double-wall-paper-cup-43/__data.json", "/product/ice-cream-cup-47", "/product/ice-cream-cup-47/__data.json", "/product/kraft-ripple-cup-without-lid-45", "/product/kraft-ripple-cup-without-lid-45/__data.json", "/product/single-wall-paper-cup-41", "/product/single-wall-paper-cup-41/__data.json", "/product/eight-side-seal-with-clear-window-kraft-paper-bag-3", "/product/eight-side-seal-with-clear-window-kraft-paper-bag-3/__data.json", "/product/one-side-transparent-one-side-aluminium-foil-zipper-bag-5", "/product/one-side-transparent-one-side-aluminium-foil-zipper-bag-5/__data.json", "/product/standup-pouch-zipper-coffee-bag-9", "/product/standup-pouch-zipper-coffee-bag-9/__data.json", "/product/diamond-irregular-side-zipper-11", "/product/diamond-irregular-side-zipper-11/__data.json", "/product/window-kraft-paper-standup-pouch-1", "/product/window-kraft-paper-standup-pouch-1/__data.json", "/product/eight-side-seal-gusset-bag-with-valve-17", "/product/eight-side-seal-gusset-bag-with-valve-17/__data.json", "/product/clear-plastic-cup-without-lid-53", "/product/clear-plastic-cup-without-lid-53/__data.json", "/product/sandwich-paper-bag-23", "/product/sandwich-paper-bag-23/__data.json", "/product/coloured-cup-51", "/product/coloured-cup-51/__data.json", "/product/slip-lid-55", "/product/slip-lid-55/__data.json", "/product/clear-dom-lids-57", "/product/clear-dom-lids-57/__data.json", "/product/plain-white-napkin-61", "/product/plain-white-napkin-61/__data.json", "/product/clear-flat-lid-59", "/product/clear-flat-lid-59/__data.json", "/product/wet-wipes-65", "/product/wet-wipes-65/__data.json", "/product/matte-eight-side-seal-bag-13", "/product/matte-eight-side-seal-bag-13/__data.json", "/product/aluminium-wrap-paper-chicken-71", "/product/aluminium-wrap-paper-chicken-71/__data.json", "/product/plain-wrapping-paper-67", "/product/plain-wrapping-paper-67/__data.json", "/product/aluminium-wrap-paper-plain-69", "/product/aluminium-wrap-paper-plain-69/__data.json", "/product/wax-paper-75", "/product/wax-paper-75/__data.json", "/product/aluminium-wrap-paper-burger-73", "/product/aluminium-wrap-paper-burger-73/__data.json", "/product/cake-box-4-cup-79", "/product/cake-box-4-cup-79/__data.json", "/product/cake-box-6-cup-81", "/product/cake-box-6-cup-81/__data.json", "/product/noodle-box-77", "/product/noodle-box-77/__data.json", "/product/cake-box-12-cup-83", "/product/cake-box-12-cup-83/__data.json", "/product/nylon-bags-483", "/product/nylon-bags-483/__data.json", "/product/white-plastic-bag-481", "/product/white-plastic-bag-481/__data.json", "/product/cake-box-plain-85", "/product/cake-box-plain-85/__data.json", "/product/plastic-trash-bags-485", "/product/plastic-trash-bags-485/__data.json", "/product/plastic-courier-bags-645", "/product/plastic-courier-bags-645/__data.json", "/product/blue-plastic-trash-bags-487", "/product/blue-plastic-trash-bags-487/__data.json", "/product/black-paper-coffee-bag-with-window-397", "/product/black-paper-coffee-bag-with-window-397/__data.json", "/product/spout-standup-pouch-395", "/product/spout-standup-pouch-395/__data.json", "/product/cold-pro-beverage-bottle-405", "/product/cold-pro-beverage-bottle-405/__data.json", "/product/printed-aluminum-pouch-391", "/product/printed-aluminum-pouch-391/__data.json", "/product/white-shining-coffee-bag-with-window-393", "/product/white-shining-coffee-bag-with-window-393/__data.json", "/product/rectangular-bottle-407", "/product/rectangular-bottle-407/__data.json", "/product/white-jar-553", "/product/white-jar-553/__data.json", "/product/clear-pet-plastic-bottle-409", "/product/clear-pet-plastic-bottle-409/__data.json", "/product/jar-with-aluminum-cover-551", "/product/jar-with-aluminum-cover-551/__data.json", "/product/black-square-jar-557", "/product/black-square-jar-557/__data.json", "/product/round-jar-with-red-lid-555", "/product/round-jar-with-red-lid-555/__data.json", "/product/square-jar-with-white-cover-561", "/product/square-jar-with-white-cover-561/__data.json", "/product/pet-plastic-jars-559", "/product/pet-plastic-jars-559/__data.json", "/product/general-purpose-tub-2-131", "/product/general-purpose-tub-2-131/__data.json", "/product/large-round-tub-smooth-surface-135", "/product/large-round-tub-smooth-surface-135/__data.json", "/product/square-container-2-139", "/product/square-container-2-139/__data.json", "/product/clear-container-with-lid-107", "/product/clear-container-with-lid-107/__data.json", "/product/croissant-clear-container-with-hinged-lid-111", "/product/croissant-clear-container-with-hinged-lid-111/__data.json", "/product/muffin-clear-container-with-hinged-lid-113", "/product/muffin-clear-container-with-hinged-lid-113/__data.json", "/product/square-clear-container-with-hinged-lid-115", "/product/square-clear-container-with-hinged-lid-115/__data.json", "/product/general-purpose-tub-false-bottom-129", "/product/general-purpose-tub-false-bottom-129/__data.json", "/product/cake-dome-133", "/product/cake-dome-133/__data.json", "/product/round-cake-clear-container-with-hinged-lid-121", "/product/round-cake-clear-container-with-hinged-lid-121/__data.json", "/product/disposal-plastic-food-containers-lid-329", "/product/disposal-plastic-food-containers-lid-329/__data.json", "/product/rectangular-aluminum-bar-with-lid-337", "/product/rectangular-aluminum-bar-with-lid-337/__data.json", "/product/gold-square-plastic-plates-297", "/product/gold-square-plastic-plates-297/__data.json", "/product/rectangle-golden-plates-with-lid-299", "/product/rectangle-golden-plates-with-lid-299/__data.json", "/product/transpaernt-triangle-box--lid-339", "/product/transpaernt-triangle-box--lid-339/__data.json", "/product/candy-container-with-lid-347", "/product/candy-container-with-lid-347/__data.json", "/product/baklava-transparent-boxes-341", "/product/baklava-transparent-boxes-341/__data.json", "/product/high-cake-base-cover-and-base-351", "/product/high-cake-base-cover-and-base-351/__data.json", "/product/transparent-box-for-high-cake-353", "/product/transparent-box-for-high-cake-353/__data.json", "/product/transparent-box-for-high-cake-355", "/product/transparent-box-for-high-cake-355/__data.json", "/product/cake-box-base-and-lid-357", "/product/cake-box-base-and-lid-357/__data.json", "/product/plastic-cake-box-cirular-shaped-cake-container-361", "/product/plastic-cake-box-cirular-shaped-cake-container-361/__data.json", "/product/mini-cake-plate-359", "/product/mini-cake-plate-359/__data.json", "/product/pet-salad-clear-container-with-hinged-lid-103", "/product/pet-salad-clear-container-with-hinged-lid-103/__data.json", "/product/pet-clear-container-with-hinged-lid-101", "/product/pet-clear-container-with-hinged-lid-101/__data.json", "/product/golden-circle-box-363", "/product/golden-circle-box-363/__data.json", "/product/clear-container-with-dom-lid-105", "/product/clear-container-with-dom-lid-105/__data.json", "/product/black-hexagonal-bowl-transparent-lid-345", "/product/black-hexagonal-bowl-transparent-lid-345/__data.json", "/product/hinged-salad-container---149", "/product/hinged-salad-container---149/__data.json", "/product/hoddog-clear-container-with-hinged-lid-117", "/product/hoddog-clear-container-with-hinged-lid-117/__data.json", "/product/clear-square-plastic-container-with-lid-349", "/product/clear-square-plastic-container-with-lid-349/__data.json", "/product/sushi-tray-with-lid-473", "/product/sushi-tray-with-lid-473/__data.json", "/product/dates-plastic-container-549", "/product/dates-plastic-container-549/__data.json", "/product/clear-plastic-container-621", "/product/clear-plastic-container-621/__data.json", "/product/round-bowl-631", "/product/round-bowl-631/__data.json", "/product/plastic-deep-plate-627", "/product/plastic-deep-plate-627/__data.json", "/product/kraft-paper-bag-without-handle-277", "/product/kraft-paper-bag-without-handle-277/__data.json", "/product/white-kraft-paper-bag-with-handle-275", "/product/white-kraft-paper-bag-with-handle-275/__data.json", "/product/white-kraft-paper-bag-without-handle-279", "/product/white-kraft-paper-bag-without-handle-279/__data.json", "/product/sandwich-paper-bag-285", "/product/sandwich-paper-bag-285/__data.json", "/product/kraft-paper-bag-with-die--cut-handle-383", "/product/kraft-paper-bag-with-die--cut-handle-383/__data.json", "/product/kraft-burger-pouch-375", "/product/kraft-burger-pouch-375/__data.json", "/product/white-paper-bag-with-die--cut-handle-385", "/product/white-paper-bag-with-die--cut-handle-385/__data.json", "/product/brwon-burger-bag-569", "/product/brwon-burger-bag-569/__data.json", "/product/food-container-141", "/product/food-container-141/__data.json", "/product/microwave-safe-bowl-335", "/product/microwave-safe-bowl-335/__data.json", "/product/microwave-container-with-lid-379", "/product/microwave-container-with-lid-379/__data.json", "/product/microwave-safe-bowl-367", "/product/microwave-safe-bowl-367/__data.json", "/product/microwaveable-food-containers-467", "/product/microwaveable-food-containers-467/__data.json", "/product/utility-tray-clear-137", "/product/utility-tray-clear-137/__data.json", "/product/square-golden-woodeed-plastic-plate-311", "/product/square-golden-woodeed-plastic-plate-311/__data.json", "/product/golden-rectaangular-bowl-transparent-lid-313", "/product/golden-rectaangular-bowl-transparent-lid-313/__data.json", "/product/carton-box-97", "/product/carton-box-97/__data.json", "/product/corrugated-dental-box-615", "/product/corrugated-dental-box-615/__data.json", "/product/rectangle-microwave-container-381", "/product/rectangle-microwave-container-381/__data.json", "/product/unwrapped-straw-flex-235", "/product/unwrapped-straw-flex-235/__data.json", "/product/straw-with-spoon-239", "/product/straw-with-spoon-239/__data.json", "/product/unwrapped-straw-241", "/product/unwrapped-straw-241/__data.json", "/product/wrapped-coloured-straw-6mm-245", "/product/wrapped-coloured-straw-6mm-245/__data.json", "/product/vip-plastic-spoon-191", "/product/vip-plastic-spoon-191/__data.json", "/product/green-wrapped-straw-247", "/product/green-wrapped-straw-247/__data.json", "/product/vip-plastic-fork-193", "/product/vip-plastic-fork-193/__data.json", "/product/vip-cutlery-set-199", "/product/vip-cutlery-set-199/__data.json", "/product/plastic-spoon-201", "/product/plastic-spoon-201/__data.json", "/product/vip-plastic-knife-195", "/product/vip-plastic-knife-195/__data.json", "/product/plastic-knife-205", "/product/plastic-knife-205/__data.json", "/product/plastic-spork-2-207", "/product/plastic-spork-2-207/__data.json", "/product/plastic-cocktail-stirrer-213", "/product/plastic-cocktail-stirrer-213/__data.json", "/product/plastic-tea-spoon-209", "/product/plastic-tea-spoon-209/__data.json", "/product/nescafe-plastic-stirrer-215", "/product/nescafe-plastic-stirrer-215/__data.json", "/product/white-cocktail-spoon-227", "/product/white-cocktail-spoon-227/__data.json", "/product/plastic-clear-round-bottle-403", "/product/plastic-clear-round-bottle-403/__data.json", "/product/transparent-knife-and-fork-with-napkins-459", "/product/transparent-knife-and-fork-with-napkins-459/__data.json", "/product/mixer-stirring-445", "/product/mixer-stirring-445/__data.json", "/product/41-dining-set-transparent-461", "/product/41-dining-set-transparent-461/__data.json", "/product/vip-plastic-dining-set-463", "/product/vip-plastic-dining-set-463/__data.json", "/product/dish-2-145", "/product/dish-2-145/__data.json", "/product/-287", "/product/-287/__data.json", "/product/vip-plastic-plate-with-transparent-lid-293", "/product/vip-plastic-plate-with-transparent-lid-293/__data.json", "/product/plastic-dish-with-transparent-lid-291", "/product/plastic-dish-with-transparent-lid-291/__data.json", "/product/plastic-desert-plates-premium-295", "/product/plastic-desert-plates-premium-295/__data.json", "/product/gold-round-plates-with-lid-301", "/product/gold-round-plates-with-lid-301/__data.json", "/product/red-transparent-plastic-plates-307", "/product/red-transparent-plastic-plates-307/__data.json", "/product/rectangulre-golden-plates-305", "/product/rectangulre-golden-plates-305/__data.json", "/product/golden-plastic-bowl-317", "/product/golden-plastic-bowl-317/__data.json", "/product/round-golden-plastic-dish-309", "/product/round-golden-plastic-dish-309/__data.json", "/product/golden-round-plates-315", "/product/golden-round-plates-315/__data.json", "/product/round-golden-plastic-box-327", "/product/round-golden-plastic-box-327/__data.json", "/product/oval-plastic-plate-477", "/product/oval-plastic-plate-477/__data.json", "/product/pizza-box-2-99", "/product/pizza-box-2-99/__data.json", "/product/rectangle-paper-baking-moulds-153", "/product/rectangle-paper-baking-moulds-153/__data.json", "/product/square-cake-board-171", "/product/square-cake-board-171/__data.json", "/product/rectangle-cake-board-163", "/product/rectangle-cake-board-163/__data.json", "/product/round-cake-board-167", "/product/round-cake-board-167/__data.json", "/product/triangle-shape-cake-board-169", "/product/triangle-shape-cake-board-169/__data.json", "/product/rectangle-clear-container-with-hinged-lid-109", "/product/rectangle-clear-container-with-hinged-lid-109/__data.json", "/product/golden-rectangle-sushi-box-325", "/product/golden-rectangle-sushi-box-325/__data.json", "/product/rectangular-container-transparent-lid-331", "/product/rectangular-container-transparent-lid-331/__data.json", "/product/black-rectangular-sushi--transparent-lid-343", "/product/black-rectangular-sushi--transparent-lid-343/__data.json", "/product/rectangle-black-sushi-tray-475", "/product/rectangle-black-sushi-tray-475/__data.json", "/product/colored-popcorn-pouch-93", "/product/colored-popcorn-pouch-93/__data.json", "/product/popcorn-tub-95", "/product/popcorn-tub-95/__data.json", "/product/popcorn-box-91", "/product/popcorn-box-91/__data.json", "/product/french-fries-pouch-87", "/product/french-fries-pouch-87/__data.json", "/product/kraft-paper-sushi-box-425", "/product/kraft-paper-sushi-box-425/__data.json", "/product/kraft-paper-plate-brown-421", "/product/kraft-paper-plate-brown-421/__data.json", "/product/cake-box-printed-203", "/product/cake-box-printed-203/__data.json", "/product/white-cake-boxes-423", "/product/white-cake-boxes-423/__data.json", "/product/kraft-paper-lunch-box-427", "/product/kraft-paper-lunch-box-427/__data.json", "/product/burger-kraft-paper-boxes-431", "/product/burger-kraft-paper-boxes-431/__data.json", "/product/white-soup-cup-429", "/product/white-soup-cup-429/__data.json", "/product/kraft-sandwich-boxes-433", "/product/kraft-sandwich-boxes-433/__data.json", "/product/round-white-dollies-159", "/product/round-white-dollies-159/__data.json", "/product/white-paper-soup-cup-465", "/product/white-paper-soup-cup-465/__data.json", "/product/4-cups-corrugated-holder-399", "/product/4-cups-corrugated-holder-399/__data.json", "/product/paper-corrugated-cups-holder-271", "/product/paper-corrugated-cups-holder-271/__data.json", "/product/paper-holder-corrugated-2cup-437", "/product/paper-holder-corrugated-2cup-437/__data.json", "/product/paper-holder-corrugated-4-cup-435", "/product/paper-holder-corrugated-4-cup-435/__data.json", "/product/disposable-2-cups-holder-441", "/product/disposable-2-cups-holder-441/__data.json", "/product/takeaway-drinks-cup-holder-647", "/product/takeaway-drinks-cup-holder-647/__data.json", "/product/disposable-4-cups-holder-439", "/product/disposable-4-cups-holder-439/__data.json", "/product/wooden-mixer-stirring-447", "/product/wooden-mixer-stirring-447/__data.json", "/product/double-wall-white-paper-cup-401", "/product/double-wall-white-paper-cup-401/__data.json", "/product/round-sauce-cans-with-lid-451", "/product/round-sauce-cans-with-lid-451/__data.json", "/product/sauce-cup-387", "/product/sauce-cup-387/__data.json", "/product/white-sauce-cup-453", "/product/white-sauce-cup-453/__data.json", "/product/clear-sauce-cup-455", "/product/clear-sauce-cup-455/__data.json", "/product/black-sauce-cup-457", "/product/black-sauce-cup-457/__data.json", "/product/transparent-sauce-cups-479", "/product/transparent-sauce-cups-479/__data.json", "/product/plain-plastic-cup-593", "/product/plain-plastic-cup-593/__data.json", "/product/white-cake-cup-173", "/product/white-cake-cup-173/__data.json", "/product/commercial-coffee-filters-443", "/product/commercial-coffee-filters-443/__data.json", "/product/cling-film-3-377", "/product/cling-film-3-377/__data.json", "/product/chef-hat-491", "/product/chef-hat-491/__data.json", "/product/portion-cups-and-lids-629", "/product/portion-cups-and-lids-629/__data.json", "/product/disposable-stretchable-black-caps-489", "/product/disposable-stretchable-black-caps-489/__data.json", "/product/shoe-covers-blue-493", "/product/shoe-covers-blue-493/__data.json", "/product/transparent-gloves-497", "/product/transparent-gloves-497/__data.json", "/product/disposable-nitrile-gloves-499", "/product/disposable-nitrile-gloves-499/__data.json", "/product/cotton-gloves-501", "/product/cotton-gloves-501/__data.json", "/product/disposable-plastic-gloves-495", "/product/disposable-plastic-gloves-495/__data.json", "/product/white-gloves-without-powder-503", "/product/white-gloves-without-powder-503/__data.json", "/product/bio-gloves-vinyl-505", "/product/bio-gloves-vinyl-505/__data.json", "/product/aluminum-foil-619", "/product/aluminum-foil-619/__data.json", "/product/neck-nylon-apron-511", "/product/neck-nylon-apron-511/__data.json", "/product/face-mask-three-layers-507", "/product/face-mask-three-layers-507/__data.json", "/product/roof-cleanser-513", "/product/roof-cleanser-513/__data.json", "/product/nylon-apron-509", "/product/nylon-apron-509/__data.json", "/product/roof-glass-cleaner-515", "/product/roof-glass-cleaner-515/__data.json", "/product/dishwasher-lemon-519", "/product/dishwasher-lemon-519/__data.json", "/product/antibacterial-disinfectant-517", "/product/antibacterial-disinfectant-517/__data.json", "/product/oven-cleaner-523", "/product/oven-cleaner-523/__data.json", "/product/multi-purpose-cleaner-525", "/product/multi-purpose-cleaner-525/__data.json", "/product/surface-cleaner-521", "/product/surface-cleaner-521/__data.json", "/product/plate-cover-foil-529", "/product/plate-cover-foil-529/__data.json", "/product/aluminum-foil-pot-with-lid-527", "/product/aluminum-foil-pot-with-lid-527/__data.json", "/product/kunefe-plate-533", "/product/kunefe-plate-533/__data.json", "/product/aluminum-container-535", "/product/aluminum-container-535/__data.json", "/product/paper-coasters-563", "/product/paper-coasters-563/__data.json", "/product/aluminum-foil-pans-with-lid-537", "/product/aluminum-foil-pans-with-lid-537/__data.json", "/product/foil-drip-pans-637", "/product/foil-drip-pans-637/__data.json", "/product/disposable-food-storage-635", "/product/disposable-food-storage-635/__data.json", "/product/aluminium-oval-platter-639", "/product/aluminium-oval-platter-639/__data.json", "/product/aluminum-sauce-plate-643", "/product/aluminum-sauce-plate-643/__data.json", "/product/disposable-round-aluminum-pans-575", "/product/disposable-round-aluminum-pans-575/__data.json", "/product/aluminum-foil-baking-cups-577", "/product/aluminum-foil-baking-cups-577/__data.json", "/product/aluminum-foil-cupcake-573", "/product/aluminum-foil-cupcake-573/__data.json", "/product/mini-aluminum-foil-cups-579", "/product/mini-aluminum-foil-cups-579/__data.json", "/product/aluminum-full-curl-641", "/product/aluminum-full-curl-641/__data.json", "/product/gold-foil-container-with-lid-581", "/product/gold-foil-container-with-lid-581/__data.json", "/product/nordic-ware-pie-pan-587", "/product/nordic-ware-pie-pan-587/__data.json", "/product/colorful-disposable-containers-599", "/product/colorful-disposable-containers-599/__data.json", "/product/aluminum-container-583", "/product/aluminum-container-583/__data.json", "/product/meal-tray-601", "/product/meal-tray-601/__data.json", "/product/aluminum-plates-with-a-lid-603", "/product/aluminum-plates-with-a-lid-603/__data.json", "/product/aluminum-loaf-pans-605", "/product/aluminum-loaf-pans-605/__data.json", "/product/rectangular-aluminum-container-607", "/product/rectangular-aluminum-container-607/__data.json", "/product/aluminum-foil-lunch-box-609", "/product/aluminum-foil-lunch-box-609/__data.json", "/product/biodegradable-container-613", "/product/biodegradable-container-613/__data.json", "/product/foam-cup-547", "/product/foam-cup-547/__data.json", "/product/plastic-disposable-plates-319", "/product/plastic-disposable-plates-319/__data.json", "/product/reusable-foil-tins-611", "/product/reusable-foil-tins-611/__data.json", "/product/foam-plates-539", "/product/foam-plates-539/__data.json", "/product/disposable-plastic-white-617", "/product/disposable-plastic-white-617/__data.json", "/product/foam-cover-plate-541", "/product/foam-cover-plate-541/__data.json", "/product/container-foam-545", "/product/container-foam-545/__data.json", "/product/foam-hotdog-box-543", "/product/foam-hotdog-box-543/__data.json"]);
+var prerendered = /* @__PURE__ */ new Set(["/cart", "/cart/__data.json", "/wishlist", "/login", "/login/__data.json", "/signup", "/signup/__data.json", "/checkout", "/checkout/__data.json", "/", "/__data.json", "/page/contact-us", "/page/contact-us/__data.json", "/category/non-woven-bags-2-15", "/category/non-woven-bags-2-15/__data.json", "/category/laundry-bag-2-45", "/category/laundry-bag-2-45/__data.json", "/category/paper-bags-3-95", "/category/paper-bags-3-95/__data.json", "/category/coffee-bag-2-37", "/category/coffee-bag-2-37/__data.json", "/category/plastic-bags-2-17", "/category/plastic-bags-2-17/__data.json", "/category/bags-2-1", "/category/bags-2-1/__data.json", "/category/rectangle-container-3-59", "/category/rectangle-container-3-59/__data.json", "/category/general-purpose-tub-2-75", "/category/general-purpose-tub-2-75/__data.json", "/category/carton-products-3-5", "/category/carton-products-3-5/__data.json", "/category/sauce-containers-3-73", "/category/sauce-containers-3-73/__data.json", "/category/tray-2-77", "/category/tray-2-77/__data.json", "/category/salad-container-2-57", "/category/salad-container-2-57/__data.json", "/category/cutlery-2-81", "/category/cutlery-2-81/__data.json", "/category/straw-2-85", "/category/straw-2-85/__data.json", "/category/dish-2-79", "/category/dish-2-79/__data.json", "/category/plastic-products-3", "/category/plastic-products-3/__data.json", "/category/carton-products-2-23", "/category/carton-products-2-23/__data.json", "/category/pizza-box-2-53", "/category/pizza-box-2-53/__data.json", "/category/paper-box-2-49", "/category/paper-box-2-49/__data.json", "/category/paper-bakery-moulds-2-83", "/category/paper-bakery-moulds-2-83/__data.json", "/category/plastic-bottles-125", "/category/plastic-bottles-125/__data.json", "/category/cake-board-3-87", "/category/cake-board-3-87/__data.json", "/category/paper-bowl-3-97", "/category/paper-bowl-3-97/__data.json", "/category/paper-holder-101", "/category/paper-holder-101/__data.json", "/category/cake-containers-2-69", "/category/cake-containers-2-69/__data.json", "/category/lid-2-41", "/category/lid-2-41/__data.json", "/category/paper-cup-2-27", "/category/paper-cup-2-27/__data.json", "/category/microwave-container-3-71", "/category/microwave-container-3-71/__data.json", "/category/cups--bowls-2-7", "/category/cups--bowls-2-7/__data.json", "/category/muffin-cup-131", "/category/muffin-cup-131/__data.json", "/category/napkins-2-9", "/category/napkins-2-9/__data.json", "/category/napkin-2-31", "/category/napkin-2-31/__data.json", "/category/refreshing-wet-wipes-2-33", "/category/refreshing-wet-wipes-2-33/__data.json", "/category/cling-film-103", "/category/cling-film-103/__data.json", "/category/wraps-2-11", "/category/wraps-2-11/__data.json", "/category/paper-wraps-2-35", "/category/paper-wraps-2-35/__data.json", "/category/aluminum-paper-2-55", "/category/aluminum-paper-2-55/__data.json", "/category/sterilization--hygiene-3-111", "/category/sterilization--hygiene-3-111/__data.json", "/category/foil-dishes-107", "/category/foil-dishes-107/__data.json", "/category/sterilization--hygiene-109", "/category/sterilization--hygiene-109/__data.json", "/page/return-policy", "/page/return-policy/__data.json", "/page/about-us", "/page/about-us/__data.json", "/page/privacy-policy", "/page/privacy-policy/__data.json", "/page/faq", "/page/faq/__data.json", "/category/-102-113", "/category/-102-113/__data.json", "/page/terms-and-conditions", "/page/terms-and-conditions/__data.json", "/category/-103-115", "/category/-103-115/__data.json", "/category/foil-container-129", "/category/foil-container-129/__data.json", "/category/foam-cup-2-119", "/category/foam-cup-2-119/__data.json", "/category/container-foam-121", "/category/container-foam-121/__data.json", "/category/foam-plates-123", "/category/foam-plates-123/__data.json", "/product/non-woven-bag-d-cut-31", "/product/non-woven-bag-d-cut-31/__data.json", "/product/pure-aluminium-foil-zipper-bag-7", "/product/pure-aluminium-foil-zipper-bag-7/__data.json", "/product/laundry-bag-2-37", "/product/laundry-bag-2-37/__data.json", "/product/a-bag-with-glue-on-the-back-15", "/product/a-bag-with-glue-on-the-back-15/__data.json", "/product/non-woven-bag-with-handle-33", "/product/non-woven-bag-with-handle-33/__data.json", "/product/kraft-paper-bag-with-handle-21", "/product/kraft-paper-bag-with-handle-21/__data.json", "/category/plastic-cups-2-29", "/category/plastic-cups-2-29/__data.json", "/product/double-wall-paper-cup-43", "/product/double-wall-paper-cup-43/__data.json", "/product/single-wall-paper-cup-41", "/product/single-wall-paper-cup-41/__data.json", "/product/ice-cream-cup-47", "/product/ice-cream-cup-47/__data.json", "/product/window-kraft-paper-standup-pouch-1", "/product/window-kraft-paper-standup-pouch-1/__data.json", "/product/eight-side-seal-with-clear-window-kraft-paper-bag-3", "/product/eight-side-seal-with-clear-window-kraft-paper-bag-3/__data.json", "/product/one-side-transparent-one-side-aluminium-foil-zipper-bag-5", "/product/one-side-transparent-one-side-aluminium-foil-zipper-bag-5/__data.json", "/product/diamond-irregular-side-zipper-11", "/product/diamond-irregular-side-zipper-11/__data.json", "/product/matte-eight-side-seal-bag-13", "/product/matte-eight-side-seal-bag-13/__data.json", "/product/standup-pouch-zipper-coffee-bag-9", "/product/standup-pouch-zipper-coffee-bag-9/__data.json", "/product/sandwich-paper-bag-23", "/product/sandwich-paper-bag-23/__data.json", "/product/eight-side-seal-gusset-bag-with-valve-17", "/product/eight-side-seal-gusset-bag-with-valve-17/__data.json", "/product/coloured-cup-51", "/product/coloured-cup-51/__data.json", "/product/slip-lid-55", "/product/slip-lid-55/__data.json", "/product/clear-plastic-cup-without-lid-53", "/product/clear-plastic-cup-without-lid-53/__data.json", "/product/clear-dom-lids-57", "/product/clear-dom-lids-57/__data.json", "/product/plain-white-napkin-61", "/product/plain-white-napkin-61/__data.json", "/product/clear-flat-lid-59", "/product/clear-flat-lid-59/__data.json", "/product/wet-wipes-65", "/product/wet-wipes-65/__data.json", "/product/aluminium-wrap-paper-plain-69", "/product/aluminium-wrap-paper-plain-69/__data.json", "/product/aluminium-wrap-paper-burger-73", "/product/aluminium-wrap-paper-burger-73/__data.json", "/product/wax-paper-75", "/product/wax-paper-75/__data.json", "/product/aluminium-wrap-paper-chicken-71", "/product/aluminium-wrap-paper-chicken-71/__data.json", "/product/noodle-box-77", "/product/noodle-box-77/__data.json", "/product/cake-box-6-cup-81", "/product/cake-box-6-cup-81/__data.json", "/product/cake-box-12-cup-83", "/product/cake-box-12-cup-83/__data.json", "/product/cake-box-4-cup-79", "/product/cake-box-4-cup-79/__data.json", "/product/cake-box-plain-85", "/product/cake-box-plain-85/__data.json", "/product/kraft-paper-bag-without-handle-277", "/product/kraft-paper-bag-without-handle-277/__data.json", "/product/white-kraft-paper-bag-without-handle-279", "/product/white-kraft-paper-bag-without-handle-279/__data.json", "/product/sandwich-paper-bag-285", "/product/sandwich-paper-bag-285/__data.json", "/product/white-kraft-paper-bag-with-handle-275", "/product/white-kraft-paper-bag-with-handle-275/__data.json", "/product/kraft-burger-pouch-375", "/product/kraft-burger-pouch-375/__data.json", "/product/white-paper-bag-with-die--cut-handle-385", "/product/white-paper-bag-with-die--cut-handle-385/__data.json", "/product/kraft-paper-bag-with-die--cut-handle-383", "/product/kraft-paper-bag-with-die--cut-handle-383/__data.json", "/product/brwon-burger-bag-569", "/product/brwon-burger-bag-569/__data.json", "/product/white-shining-coffee-bag-with-window-393", "/product/white-shining-coffee-bag-with-window-393/__data.json", "/product/kraft-ripple-cup-without-lid-45", "/product/kraft-ripple-cup-without-lid-45/__data.json", "/product/spout-standup-pouch-395", "/product/spout-standup-pouch-395/__data.json", "/product/printed-aluminum-pouch-391", "/product/printed-aluminum-pouch-391/__data.json", "/product/black-paper-coffee-bag-with-window-397", "/product/black-paper-coffee-bag-with-window-397/__data.json", "/product/nylon-bags-483", "/product/nylon-bags-483/__data.json", "/product/blue-plastic-trash-bags-487", "/product/blue-plastic-trash-bags-487/__data.json", "/product/plastic-trash-bags-485", "/product/plastic-trash-bags-485/__data.json", "/product/rectangle-clear-container-with-hinged-lid-109", "/product/rectangle-clear-container-with-hinged-lid-109/__data.json", "/product/plastic-courier-bags-645", "/product/plastic-courier-bags-645/__data.json", "/product/golden-rectangle-sushi-box-325", "/product/golden-rectangle-sushi-box-325/__data.json", "/product/rectangle-black-sushi-tray-475", "/product/rectangle-black-sushi-tray-475/__data.json", "/product/rectangular-container-transparent-lid-331", "/product/rectangular-container-transparent-lid-331/__data.json", "/product/white-plastic-bag-481", "/product/white-plastic-bag-481/__data.json", "/product/black-rectangular-sushi--transparent-lid-343", "/product/black-rectangular-sushi--transparent-lid-343/__data.json", "/product/general-purpose-tub-false-bottom-129", "/product/general-purpose-tub-false-bottom-129/__data.json", "/product/general-purpose-tub-2-131", "/product/general-purpose-tub-2-131/__data.json", "/product/large-round-tub-smooth-surface-135", "/product/large-round-tub-smooth-surface-135/__data.json", "/product/clear-sauce-cup-455", "/product/clear-sauce-cup-455/__data.json", "/product/sauce-cup-387", "/product/sauce-cup-387/__data.json", "/product/white-sauce-cup-453", "/product/white-sauce-cup-453/__data.json", "/product/square-container-2-139", "/product/square-container-2-139/__data.json", "/product/black-sauce-cup-457", "/product/black-sauce-cup-457/__data.json", "/product/transparent-sauce-cups-479", "/product/transparent-sauce-cups-479/__data.json", "/product/plain-plastic-cup-593", "/product/plain-plastic-cup-593/__data.json", "/product/utility-tray-clear-137", "/product/utility-tray-clear-137/__data.json", "/product/portion-cups-and-lids-629", "/product/portion-cups-and-lids-629/__data.json", "/product/square-golden-woodeed-plastic-plate-311", "/product/square-golden-woodeed-plastic-plate-311/__data.json", "/product/golden-rectaangular-bowl-transparent-lid-313", "/product/golden-rectaangular-bowl-transparent-lid-313/__data.json", "/product/pet-clear-container-with-hinged-lid-101", "/product/pet-clear-container-with-hinged-lid-101/__data.json", "/product/round-sauce-cans-with-lid-451", "/product/round-sauce-cans-with-lid-451/__data.json", "/product/pet-salad-clear-container-with-hinged-lid-103", "/product/pet-salad-clear-container-with-hinged-lid-103/__data.json", "/product/hoddog-clear-container-with-hinged-lid-117", "/product/hoddog-clear-container-with-hinged-lid-117/__data.json", "/product/plain-wrapping-paper-67", "/product/plain-wrapping-paper-67/__data.json", "/product/hinged-salad-container---149", "/product/hinged-salad-container---149/__data.json", "/product/black-hexagonal-bowl-transparent-lid-345", "/product/black-hexagonal-bowl-transparent-lid-345/__data.json", "/product/clear-square-plastic-container-with-lid-349", "/product/clear-square-plastic-container-with-lid-349/__data.json", "/product/sushi-tray-with-lid-473", "/product/sushi-tray-with-lid-473/__data.json", "/product/dates-plastic-container-549", "/product/dates-plastic-container-549/__data.json", "/product/clear-plastic-container-621", "/product/clear-plastic-container-621/__data.json", "/product/plastic-deep-plate-627", "/product/plastic-deep-plate-627/__data.json", "/product/round-bowl-631", "/product/round-bowl-631/__data.json", "/product/vip-plastic-spoon-191", "/product/vip-plastic-spoon-191/__data.json", "/product/vip-plastic-knife-195", "/product/vip-plastic-knife-195/__data.json", "/product/vip-cutlery-set-199", "/product/vip-cutlery-set-199/__data.json", "/product/vip-plastic-fork-193", "/product/vip-plastic-fork-193/__data.json", "/product/plastic-spoon-201", "/product/plastic-spoon-201/__data.json", "/product/plastic-knife-205", "/product/plastic-knife-205/__data.json", "/product/plastic-spork-2-207", "/product/plastic-spork-2-207/__data.json", "/product/plastic-tea-spoon-209", "/product/plastic-tea-spoon-209/__data.json", "/product/white-cocktail-spoon-227", "/product/white-cocktail-spoon-227/__data.json", "/product/nescafe-plastic-stirrer-215", "/product/nescafe-plastic-stirrer-215/__data.json", "/product/mixer-stirring-445", "/product/mixer-stirring-445/__data.json", "/product/transparent-knife-and-fork-with-napkins-459", "/product/transparent-knife-and-fork-with-napkins-459/__data.json", "/product/41-dining-set-transparent-461", "/product/41-dining-set-transparent-461/__data.json", "/product/vip-plastic-dining-set-463", "/product/vip-plastic-dining-set-463/__data.json", "/product/unwrapped-straw-flex-235", "/product/unwrapped-straw-flex-235/__data.json", "/product/plastic-cocktail-stirrer-213", "/product/plastic-cocktail-stirrer-213/__data.json", "/product/straw-with-spoon-239", "/product/straw-with-spoon-239/__data.json", "/product/unwrapped-straw-241", "/product/unwrapped-straw-241/__data.json", "/product/wrapped-coloured-straw-6mm-245", "/product/wrapped-coloured-straw-6mm-245/__data.json", "/product/green-wrapped-straw-247", "/product/green-wrapped-straw-247/__data.json", "/product/dish-2-145", "/product/dish-2-145/__data.json", "/product/-287", "/product/-287/__data.json", "/product/vip-plastic-plate-with-transparent-lid-293", "/product/vip-plastic-plate-with-transparent-lid-293/__data.json", "/product/plastic-desert-plates-premium-295", "/product/plastic-desert-plates-premium-295/__data.json", "/product/gold-round-plates-with-lid-301", "/product/gold-round-plates-with-lid-301/__data.json", "/product/rectangulre-golden-plates-305", "/product/rectangulre-golden-plates-305/__data.json", "/product/clear-container-with-dom-lid-105", "/product/clear-container-with-dom-lid-105/__data.json", "/product/red-transparent-plastic-plates-307", "/product/red-transparent-plastic-plates-307/__data.json", "/product/round-golden-plastic-dish-309", "/product/round-golden-plastic-dish-309/__data.json", "/product/golden-round-plates-315", "/product/golden-round-plates-315/__data.json", "/product/golden-plastic-bowl-317", "/product/golden-plastic-bowl-317/__data.json", "/product/plastic-dish-with-transparent-lid-291", "/product/plastic-dish-with-transparent-lid-291/__data.json", "/product/carton-box-97", "/product/carton-box-97/__data.json", "/product/round-golden-plastic-box-327", "/product/round-golden-plastic-box-327/__data.json", "/product/oval-plastic-plate-477", "/product/oval-plastic-plate-477/__data.json", "/product/pizza-box-2-99", "/product/pizza-box-2-99/__data.json", "/product/french-fries-pouch-87", "/product/french-fries-pouch-87/__data.json", "/product/popcorn-box-91", "/product/popcorn-box-91/__data.json", "/product/colored-popcorn-pouch-93", "/product/colored-popcorn-pouch-93/__data.json", "/product/popcorn-tub-95", "/product/popcorn-tub-95/__data.json", "/product/cake-box-printed-203", "/product/cake-box-printed-203/__data.json", "/product/white-cake-boxes-423", "/product/white-cake-boxes-423/__data.json", "/product/kraft-paper-plate-brown-421", "/product/kraft-paper-plate-brown-421/__data.json", "/product/kraft-paper-sushi-box-425", "/product/kraft-paper-sushi-box-425/__data.json", "/product/kraft-paper-lunch-box-427", "/product/kraft-paper-lunch-box-427/__data.json", "/product/rectangle-paper-baking-moulds-153", "/product/rectangle-paper-baking-moulds-153/__data.json", "/product/kraft-sandwich-boxes-433", "/product/kraft-sandwich-boxes-433/__data.json", "/product/corrugated-dental-box-615", "/product/corrugated-dental-box-615/__data.json", "/product/round-white-dollies-159", "/product/round-white-dollies-159/__data.json", "/product/plastic-clear-round-bottle-403", "/product/plastic-clear-round-bottle-403/__data.json", "/product/rectangular-bottle-407", "/product/rectangular-bottle-407/__data.json", "/product/clear-pet-plastic-bottle-409", "/product/clear-pet-plastic-bottle-409/__data.json", "/product/jar-with-aluminum-cover-551", "/product/jar-with-aluminum-cover-551/__data.json", "/product/cold-pro-beverage-bottle-405", "/product/cold-pro-beverage-bottle-405/__data.json", "/product/white-jar-553", "/product/white-jar-553/__data.json", "/product/round-jar-with-red-lid-555", "/product/round-jar-with-red-lid-555/__data.json", "/product/black-square-jar-557", "/product/black-square-jar-557/__data.json", "/product/pet-plastic-jars-559", "/product/pet-plastic-jars-559/__data.json", "/product/rectangle-cake-board-163", "/product/rectangle-cake-board-163/__data.json", "/product/burger-kraft-paper-boxes-431", "/product/burger-kraft-paper-boxes-431/__data.json", "/product/square-jar-with-white-cover-561", "/product/square-jar-with-white-cover-561/__data.json", "/product/round-cake-board-167", "/product/round-cake-board-167/__data.json", "/product/square-cake-board-171", "/product/square-cake-board-171/__data.json", "/product/white-soup-cup-429", "/product/white-soup-cup-429/__data.json", "/product/white-paper-soup-cup-465", "/product/white-paper-soup-cup-465/__data.json", "/product/paper-corrugated-cups-holder-271", "/product/paper-corrugated-cups-holder-271/__data.json", "/product/paper-holder-corrugated-4-cup-435", "/product/paper-holder-corrugated-4-cup-435/__data.json", "/product/paper-holder-corrugated-2cup-437", "/product/paper-holder-corrugated-2cup-437/__data.json", "/product/takeaway-drinks-cup-holder-647", "/product/takeaway-drinks-cup-holder-647/__data.json", "/product/triangle-shape-cake-board-169", "/product/triangle-shape-cake-board-169/__data.json", "/product/disposable-2-cups-holder-441", "/product/disposable-2-cups-holder-441/__data.json", "/product/clear-container-with-lid-107", "/product/clear-container-with-lid-107/__data.json", "/product/muffin-clear-container-with-hinged-lid-113", "/product/muffin-clear-container-with-hinged-lid-113/__data.json", "/product/croissant-clear-container-with-hinged-lid-111", "/product/croissant-clear-container-with-hinged-lid-111/__data.json", "/product/square-clear-container-with-hinged-lid-115", "/product/square-clear-container-with-hinged-lid-115/__data.json", "/product/4-cups-corrugated-holder-399", "/product/4-cups-corrugated-holder-399/__data.json", "/product/round-cake-clear-container-with-hinged-lid-121", "/product/round-cake-clear-container-with-hinged-lid-121/__data.json", "/product/cake-dome-133", "/product/cake-dome-133/__data.json", "/product/gold-square-plastic-plates-297", "/product/gold-square-plastic-plates-297/__data.json", "/product/rectangle-golden-plates-with-lid-299", "/product/rectangle-golden-plates-with-lid-299/__data.json", "/product/rectangular-aluminum-bar-with-lid-337", "/product/rectangular-aluminum-bar-with-lid-337/__data.json", "/product/disposal-plastic-food-containers-lid-329", "/product/disposal-plastic-food-containers-lid-329/__data.json", "/product/baklava-transparent-boxes-341", "/product/baklava-transparent-boxes-341/__data.json", "/product/transpaernt-triangle-box--lid-339", "/product/transpaernt-triangle-box--lid-339/__data.json", "/product/transparent-box-for-high-cake-355", "/product/transparent-box-for-high-cake-355/__data.json", "/product/candy-container-with-lid-347", "/product/candy-container-with-lid-347/__data.json", "/product/transparent-box-for-high-cake-353", "/product/transparent-box-for-high-cake-353/__data.json", "/product/high-cake-base-cover-and-base-351", "/product/high-cake-base-cover-and-base-351/__data.json", "/product/cake-box-base-and-lid-357", "/product/cake-box-base-and-lid-357/__data.json", "/product/mini-cake-plate-359", "/product/mini-cake-plate-359/__data.json", "/product/golden-circle-box-363", "/product/golden-circle-box-363/__data.json", "/product/double-wall-white-paper-cup-401", "/product/double-wall-white-paper-cup-401/__data.json", "/product/wooden-mixer-stirring-447", "/product/wooden-mixer-stirring-447/__data.json", "/product/microwave-safe-bowl-335", "/product/microwave-safe-bowl-335/__data.json", "/product/disposable-4-cups-holder-439", "/product/disposable-4-cups-holder-439/__data.json", "/product/food-container-141", "/product/food-container-141/__data.json", "/product/microwaveable-food-containers-467", "/product/microwaveable-food-containers-467/__data.json", "/product/microwave-container-with-lid-379", "/product/microwave-container-with-lid-379/__data.json", "/product/rectangle-microwave-container-381", "/product/rectangle-microwave-container-381/__data.json", "/product/white-cake-cup-173", "/product/white-cake-cup-173/__data.json", "/product/commercial-coffee-filters-443", "/product/commercial-coffee-filters-443/__data.json", "/product/aluminum-foil-619", "/product/aluminum-foil-619/__data.json", "/product/cling-film-3-377", "/product/cling-film-3-377/__data.json", "/product/aluminum-foil-pot-with-lid-527", "/product/aluminum-foil-pot-with-lid-527/__data.json", "/product/kunefe-plate-533", "/product/kunefe-plate-533/__data.json", "/product/plate-cover-foil-529", "/product/plate-cover-foil-529/__data.json", "/product/microwave-safe-bowl-367", "/product/microwave-safe-bowl-367/__data.json", "/product/aluminum-container-535", "/product/aluminum-container-535/__data.json", "/product/aluminum-foil-pans-with-lid-537", "/product/aluminum-foil-pans-with-lid-537/__data.json", "/product/disposable-food-storage-635", "/product/disposable-food-storage-635/__data.json", "/product/paper-coasters-563", "/product/paper-coasters-563/__data.json", "/product/foil-drip-pans-637", "/product/foil-drip-pans-637/__data.json", "/product/aluminium-oval-platter-639", "/product/aluminium-oval-platter-639/__data.json", "/product/aluminum-sauce-plate-643", "/product/aluminum-sauce-plate-643/__data.json", "/product/chef-hat-491", "/product/chef-hat-491/__data.json", "/product/disposable-stretchable-black-caps-489", "/product/disposable-stretchable-black-caps-489/__data.json", "/product/shoe-covers-blue-493", "/product/shoe-covers-blue-493/__data.json", "/product/plastic-cake-box-cirular-shaped-cake-container-361", "/product/plastic-cake-box-cirular-shaped-cake-container-361/__data.json", "/product/disposable-plastic-gloves-495", "/product/disposable-plastic-gloves-495/__data.json", "/product/transparent-gloves-497", "/product/transparent-gloves-497/__data.json", "/product/cotton-gloves-501", "/product/cotton-gloves-501/__data.json", "/product/disposable-nitrile-gloves-499", "/product/disposable-nitrile-gloves-499/__data.json", "/product/white-gloves-without-powder-503", "/product/white-gloves-without-powder-503/__data.json", "/product/bio-gloves-vinyl-505", "/product/bio-gloves-vinyl-505/__data.json", "/product/face-mask-three-layers-507", "/product/face-mask-three-layers-507/__data.json", "/product/roof-cleanser-513", "/product/roof-cleanser-513/__data.json", "/product/antibacterial-disinfectant-517", "/product/antibacterial-disinfectant-517/__data.json", "/product/dishwasher-lemon-519", "/product/dishwasher-lemon-519/__data.json", "/product/roof-glass-cleaner-515", "/product/roof-glass-cleaner-515/__data.json", "/product/aluminum-full-curl-641", "/product/aluminum-full-curl-641/__data.json", "/product/surface-cleaner-521", "/product/surface-cleaner-521/__data.json", "/product/multi-purpose-cleaner-525", "/product/multi-purpose-cleaner-525/__data.json", "/product/aluminum-foil-cupcake-573", "/product/aluminum-foil-cupcake-573/__data.json", "/product/oven-cleaner-523", "/product/oven-cleaner-523/__data.json", "/product/disposable-round-aluminum-pans-575", "/product/disposable-round-aluminum-pans-575/__data.json", "/product/aluminum-foil-baking-cups-577", "/product/aluminum-foil-baking-cups-577/__data.json", "/product/mini-aluminum-foil-cups-579", "/product/mini-aluminum-foil-cups-579/__data.json", "/product/gold-foil-container-with-lid-581", "/product/gold-foil-container-with-lid-581/__data.json", "/product/neck-nylon-apron-511", "/product/neck-nylon-apron-511/__data.json", "/product/aluminum-container-583", "/product/aluminum-container-583/__data.json", "/product/nordic-ware-pie-pan-587", "/product/nordic-ware-pie-pan-587/__data.json", "/product/nylon-apron-509", "/product/nylon-apron-509/__data.json", "/product/colorful-disposable-containers-599", "/product/colorful-disposable-containers-599/__data.json", "/product/meal-tray-601", "/product/meal-tray-601/__data.json", "/product/aluminum-plates-with-a-lid-603", "/product/aluminum-plates-with-a-lid-603/__data.json", "/product/aluminum-loaf-pans-605", "/product/aluminum-loaf-pans-605/__data.json", "/product/foam-cup-547", "/product/foam-cup-547/__data.json", "/product/rectangular-aluminum-container-607", "/product/rectangular-aluminum-container-607/__data.json", "/product/foam-cover-plate-541", "/product/foam-cover-plate-541/__data.json", "/product/foam-hotdog-box-543", "/product/foam-hotdog-box-543/__data.json", "/product/plastic-disposable-plates-319", "/product/plastic-disposable-plates-319/__data.json", "/product/container-foam-545", "/product/container-foam-545/__data.json", "/product/foam-plates-539", "/product/foam-plates-539/__data.json", "/product/aluminum-foil-lunch-box-609", "/product/aluminum-foil-lunch-box-609/__data.json", "/product/disposable-plastic-white-617", "/product/disposable-plastic-white-617/__data.json", "/product/reusable-foil-tins-611", "/product/reusable-foil-tins-611/__data.json", "/product/biodegradable-container-613", "/product/biodegradable-container-613/__data.json"]);
 
 // .svelte-kit/cloudflare-tmp/_worker.js
 async function e(e3, t2) {
