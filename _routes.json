@@ -90,18 +90,14 @@
 		"/category/paper-bakery-moulds-2-83/__data.json",
 		"/category/paper-box-2-49",
 		"/category/paper-box-2-49/__data.json",
-		"/category/cake-board-3-87",
-		"/category/cake-board-3-87/__data.json",
-		"/category/paper-bowl-3-97",
-		"/category/paper-bowl-3-97/__data.json",
-		"/category/paper-holder-101",
-		"/category/paper-holder-101/__data.json",
-		"/category/paper-cup-2-27",
-		"/category/paper-cup-2-27/__data.json",
-		"/category/cups--bowls-2-7",
-		"/category/cups--bowls-2-7/__data.json",
-		"/category/plastic-cups-2-29",
-		"/category/plastic-cups-2-29/__data.json",
-		"/en/*"
+		
+		
+		"/en/*",
+		"/en/login",
+		"/en/login/*",
+		"/en/dashboard",
+		"/en/dashboard/*",
+		"/en/signup",
+		"/en/signup/*"
 	]
 }
